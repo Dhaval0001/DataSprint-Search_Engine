@@ -1,0 +1,1485 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],s=[],r=!0,a=function(e,i,n,o,s,r,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,c=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=s,this.deleteWhenComplete=r,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),c.isInitialized=!0,c.isComplete=!0,f("... func.apply: "+e);var i=c.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[c.funcName]),null!=n&&n.apply(null,this.parameters),!0===c.deleteWhenComplete&&delete t[e],!0===c.isBlock&&(f("----- F'D: "+c.name),u())}},l=function(e,i,t,n,o,s,r){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=s,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=r,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===s&&(t.defer=!0),t.onerror=function(){f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=r&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(s))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,r,a,c,h,f,u){var m=new l(e,i,n,r,a,c,h,u);!0===f?o[e]=m:s[e]=m,t[e]=m,d(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=n,t[e]=n,d(n)},addFunc:function(e,n,r,l,c,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var y=new a(e,n,r,l,c,f,u,p);!0===m?o[e]=y:s[e]=y,t[e]=y,d(y)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=o,t[e]=o,d(o)},items:t,processAll:u,setallowLoad:function(e){r=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};</script>
+<script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript">__ez.queue.addFile('fads.js', '/porpoiseant/fads.js?gcb=195-0&cb=14', true, [], true, false, false, true);</script>
+<script>var __ezaps=[];var __ezapsVideo=[];__ezapid='aa05931b-5308-4ea3-95a2-adf84f4ffde4';</script>
+<script data-ezscrex="false" async data-pagespeed-no-defer type="text/javascript" src="/edmontonalberta/calgary.js?cb=16"></script>
+<script>window.ezslots_raw=[];var __sellerid='2e017e20f8fb702a443791f8e0bd3322';var __schain_domain='';var __ez_nid ='1254144';__advertiserRule=[''];var ezasVars = {'cid':'3289242855','pid':'pub-4231674166786366','ssid':44};if(typeof window.ezAutoAdsSetup == 'undefined'){window.google_reactive_ads_global_state = {
+                adCount: {},
+                floatingAdsStacking: { maxZIndexListeners: [], maxZIndexRestrictions: {}, nextRestrictionId: 0 },
+                messageValidationEnabled: false,
+                reactiveTypeDisabledByPublisher: {},
+                reactiveTypeEnabledInAsfe: {},
+                sideRailAvailableSpace: [],
+                sideRailOverlappableElements: [],
+                stateForType: {},
+                tagSpecificState: {},
+                wasPlaTagProcessed: true,
+                wasReactiveAdConfigReceived: { 1: true, 2: true, 8: true },
+                wasReactiveAdVisible: {},
+                wasReactiveTagRequestSent: true,
+                description: "Can't disable auto ads programmatically on the page, so here we are!"
+            };};var __ezasAggressive=true;!function(){window.ezasvEvent=function(e,t){if(!0===e[0].isIntersecting){var i=e[0].target.attributes[0].value.substr(0,e[0].target.attributes[0].value.length-9);window.ezoSTPixelAdd(i,"viewed",1),t.disconnect()}},window.ezasSlots=[],window.ezaslEvent=function(e,t){if(void 0!==e[0].target.attributes["data-ad-status"]){var i=e[0].target.attributes["data-ad-status"].value,o=e[0].target.attributes[0].value.substr(0,e[0].target.attributes[0].value.length-9);if("filled"==i)return window.ezoSTPixelAdd(o,"loaded",1),new IntersectionObserver(window.ezasvEvent,{threshold:[1]}).observe(document.getElementById(o+"-asloaded")),void t.disconnect();if("unfilled"==i)return setTimeout((function(){window.ezoAdBackFill(e)}),2e3),void t.disconnect()}},window.ezoAdBackFill=function(e){var t=e[0].target,i=t.parentElement;t.style.display="none !important";var o,d=ezoGetSlotNum(i.id);if(o=void 0!==__ez.fads?__ez.fads.initslots[i.id]:__ez_fad_initslot[i.id],void 0===d&&"function"==typeof o&&(d=o(6)),void 0!==d)var n=window[d];if(void 0!==n){n.setTargeting("compid","0"),n.setTargeting("bkfl","1"),n.setTargeting("reft","t");var a=n.getTargeting("br2")[0];void 0!==window.ezoibfh&&void 0!==window.ezoibfh[a]&&(n.setTargeting("br1",a),n.setTargeting("eb_br",window.ezoibfh[a])),googletag.display(n),setTimeout((function(){googletag.pubads().refresh([n])}),500)}},window.ezoSTPixels=[];var e=setInterval((function(){"undefined"!=typeof __ez&&"undefined"!=typeof __ezDotData&&"undefined"!=typeof ezslots&&window.ezslots_raw.length>0&&(window.ezoSTPixelFire(),clearInterval(e))}),250);window.ezoSTPixelAdd=function(e,t,i){window.ezoSTPixels.push({id:e,name:t,value:i}),window.ezoSTPixelFire()},window.ezoGetSlotById=function(e){var t=e.split("div-gpt-ad-")[1].split("-",3).join("-");for(var i in window.ezslots_raw)if(window.ezslots_raw[i].tap.includes(t))return window.ezslots_raw[i]},window.ezoGetSlotNum=function(e){if(void 0!==window.ezslots&&0!=window.ezslots)for(var t=0;t<window.ezslots.length;t++){var i=window[ezslots[t]];if(void 0!==i){var o=i.getSlotElementId();if(void 0!==o&&o==e)return ezslots[t]}}},window.ezoSTPixelFire=function(){if("undefined"!=typeof __ez&&"undefined"!=typeof __ezDotData&&"undefined"!=typeof ezslots)for(;window.ezoSTPixels.length>0;){var e=window.ezoSTPixels.shift(),t=window.ezoGetSlotById(e.id);if(void 0===t){var i;if(i=void 0!==__ez.fads?__ez.fads.initslots[e.id]:__ez_fad_initslot[e.id],void 0===googletag.defineSlot)return void window.ezoSTPixels.push(e);if(i(1),void 0===(t=window.ezoGetSlotById(e.id)))return void window.ezoSTPixels.push(e)}var o=[{type:"impression",impression_id:t.eid,domain_id:window.did.toString(),unit:e.id,t_epoch:__ez.dot.getEpoch(0),ad_position:parseInt(t.ap),country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:1,data:__ez.dot.dataToStr([new __ezDotData(e.name,e.value.toString())]),is_orig:0}],d=__ez.dot.getURL("/porpoiseant/army.gif")+"?orig=0&sts="+btoa(JSON.stringify(o));__ez.dot.Fire(d)}}}();</script>
+<script>!function(){var e=setInterval((function(){var t=document.querySelectorAll('[id^="outbrain_widget_"]');0!==t.length&&(function(e){e.forEach((function(e){if(e.parentElement.hasAttribute("data-ez-name")){var t=e.parentElement.attributes["data-ez-name"].value;new IntersectionObserver((function(e,i){e[0].isIntersecting&&(n({unit:t,name:"viewed"}),i.disconnect())}),{threshold:[1]}).observe(e);var i=e.attributes["data-widget-id"].value;window.OBREvents=window.OBREvents||[],OBREvents.push({event:"widgetDataReturned",widgetId:i,func:function(){n({unit:t,name:"loaded"})}})}}))}(t),clearInterval(e))}),250),t=[],i=setInterval((function(){"undefined"!=typeof __ez&&"undefined"!=typeof _ezim_d&&"undefined"!=typeof __ezDotData&&(o(),clearInterval(i))}),2500);function n(e){t.push(e),o()}var d="/porpoiseant/army.gif";function o(){var e,i;if(0!==t.length&&"undefined"!=typeof __ez&&"undefined"!=typeof _ezim_d&&"undefined"!=typeof __ezDotData)for(;t.length>0;){var n=t.shift(),o=(e=n.unit,i=n.name,[{type:"impression",impression_id:_ezim_d[e].full_id.split("/")[2],domain_id:window.did.toString(),unit:e,t_epoch:__ez.dot.getEpoch(0),ad_position:_ezim_d[e].position_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:2,data:__ez.dot.dataToStr([new __ezDotData(i,"1")]),is_orig:0}]),a=__ez.dot.getURL(d)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(o));void 0!==window.ezWp&&ezWp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("visit_uuid")&&(a+="&visit_uuid="+window.visit_uuid),__ez.dot.Fire(a)}}}();</script>
+<script>window.ezhbopt=true;</script>
+<script>window.ezpbCache=true;</script>
+<link href="//ad.doubleclick.net" rel="dns-prefetch">
+<link href="//pagead2.googlesyndication.com" rel="dns-prefetch">
+<link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+<link href="//adservice.google.com" rel="dns-prefetch">
+<link href="//secureads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//www.googletagservices.com" rel="dns-prefetch">
+<link rel='preload' as='script' href='//securepubads.g.doubleclick.net/tag/js/gpt.js'>
+<link rel='preload' as='script' href='//go.ezodn.com/hb/dall.js?cb=195-0-58' onerror="window.ezDallErr=true">
+<link rel='preload' as='script' href='/porpoiseant/fads.js?gcb=195-0&cb=14'>
+<script type="text/javascript">
+	var __banger_pmp_deals=[];
+</script>
+<script type='text/javascript'>_ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430];</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>ezobv=244;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>"use strict";if(typeof window.ezptlog!=='undefined'&&window.ezptlog===true){window.ezPerform=window.ezPerform||{};window.ezPerform.fadsInitStarted=performance.now();}
+__ez.fads=window.__ez.fads||{cmd:[],initslots:{},kvStore:{},divs:[[],[],[],[],[],[],[]],divsd:[],fadcount:0};var ez_ad_units=[];var ezslots=[];var ezrpos=[];var ezsrqt={};var __ez_fad_haspo=false;var __ez_fad_hascp=false;if(typeof PerformanceObserver!=='undefined'&&typeof PerformanceObserver.supportedEntryTypes!=='undefined'){if(PerformanceObserver.supportedEntryTypes.indexOf('largest-contentful-paint')>-1){__ez_fad_haspo=true;}}
+try{var __ez_fad_po=new PerformanceObserver(function(){window.__ez_fad_hascp=true;__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_hascp=true;});});__ez_fad_po.observe({type:'largest-contentful-paint',buffered:true});}catch(e){console.log(e);}
+var __ez_fad_floatshowd=false;__ez.fads.__ez_fad_floatshow=function(){if(__ez_fad_floatshowd===true||typeof __ez_fad_floating==='undefined'){return;}
+__ez_fad_floatshowd=true;var e=document.getElementById('ezmobfooter');if(e!=null){e.classList.add('ezmobtrans');}else{var head=document.head||document.getElementsByTagName('head')[0];var style=document.createElement('style');head.appendChild(style);var css="body > #ezmobfooter{bottom:0px;visibility:visible;}";style.type='text/css';if(style.styleSheet){style.styleSheet.cssText=css;}else{style.appendChild(document.createTextNode(css));}}
+googletag.cmd.push(function(){for(var i=0;i<__ez_fad_floating.length;i++){var s=__ez.fads.initslots[__ez_fad_floating[i]](null);googletag.display(__ez_fad_floating[i]);if(typeof window.adjustHbValues==='function'){window.adjustHbValues(window[s]);}
+if(typeof window.__ezWillLoadCnx!=='undefined'&&window[s].getTargeting('al')[0]=='1039'){window.__ezsbwcmd=window.__ezsbwcmd||[];var sr=[window[s]];window.__ezsbwcmd.push(function(){if(typeof __ezcnxPlayer==='undefined'||!__ezcnxPlayer.getSize()){googletag.pubads().refresh(sr);}else{__ezcnxPlayer.once('removed',function(){googletag.pubads().refresh(sr);});}});continue;}
+if(typeof window.__ezwfhb!=='undefined'){function ezChkWfhb(x){if(typeof isHbFinished!=='undefined'&&isHbFinished){googletag.pubads().refresh(x);}else{setTimeout(function(){ezChkWfhb(x);},50);}}
+ezChkWfhb([window[s]]);}
+else{googletag.pubads().refresh([window[s]]);}}});};function __ez_fad_rdy(){var h=document.documentElement.scrollHeight;var vh=window.innerHeight||Math.max(document.documentElement.clientHeight,document.body.clientHeight);if(document.body!==null&&(__ez_fad_haspo===false&&h>vh||__ez_fad_hascp||document.readyState==='complete')){return true;}}
+function __ez_fad_position(id){if(__ez.fads.loaded){__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_position(id);});return;}
+__ez.fads.fadcount++;var did=document.getElementById(id);if(did===null){return;}
+var rect=did.getBoundingClientRect();var vs=window.scrollY||document.body.scrollTop||document.documentElement.scrollTop;var vh=vs+window.screen.height;var vh=window.innerHeight||Math.max(document.documentElement.clientHeight,document.body.clientHeight);if(rect.top>=vh){__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_position(id);});return;}
+__ez.fads.divs[0].push(id);__ez.fads.divsd.push(id);if(!__ez_fad_rdy()){setTimeout(function(){__ez_fad_display(id);},50);return;}
+__ez_fad_display(id);}
+function __ez_fad_display(id){if(!__ez_fad_rdy()){setTimeout(function(){__ez_fad_display(id);},50);return;}
+__ez_fad_gpt();if(__ez_fad_floating.indexOf(id)!==-1){setTimeout(__ez.fads.__ez_fad_floatshow,0);return;}
+googletag.cmd.push(function(){var sn=__ez.fads.initslots[id](0);if(!sn){return;}
+var s=window[sn];googletag.display(id);if(typeof window.ezasBuild==='function'){if(window.ezasBuild(s)){return;}}
+if(typeof window.adjustHbValues==='function'){window.adjustHbValues(s);}
+if(typeof window.__ezwfhb!=='undefined'){function ezChkWfhb(){if(typeof isHbFinished!=='undefined'&&isHbFinished){googletag.pubads().refresh([s]);}
+else{setTimeout(ezChkWfhb,50);}}
+ezChkWfhb();}
+else{if(typeof window.ezptlog!=='undefined'&&window.ezptlog===true){window.ezPerform=window.ezPerform||{};window.ezPerform.fadsSlotRefreshCalled=window.ezPerform.fadsSlotRefreshCalled||[];window.ezPerform.fadsSlotRefreshCalled.push(performance.now());}
+googletag.pubads().refresh([s]);}});}
+function ezSetTargetingFromMap(slot,obj){if(typeof slot==='undefined'){return;}
+for(var key in obj){if(!obj.hasOwnProperty(key)){continue;}
+slot.setTargeting(key,obj[key]);}}
+function ezSetSlotTargeting(divid,key,value){var slot=ezGetSlotById(divid);if(slot){slot.setTargeting(key,value);}else{if(typeof __ez.fads.kvStore[divid]==='undefined'){__ez.fads.kvStore[divid]={};}
+__ez.fads.kvStore[divid][key]=value;}}
+function ezGetSlotById(id){if(typeof window.ezslots==='undefined'||window.ezslots==0){return;}
+for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+var slotId=slot.getSlotElementId();if(typeof slotId!=='undefined'&&slotId==id){return slot;}}}
+function __ez_close_anchor(){googletag.cmd.push(function(slot){for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+var alS=slot.getTargeting('al')[0]%1000;if(alS==5){googletag.destroySlots([slot]);}}
+if(typeof window.ezdomain!=='undefined'){var d=new Date();d.setTime(d.getTime()+(2*60*60*1000));var expires="expires="+d.toGMTString();var cookie="ez_anchor_closed=true;domain=."+ezdomain+';'+expires+"; path=/";document.cookie=cookie;}
+if(typeof(__ez_set_outstream_floor)!=='undefined'){__ez_set_outstream_floor(0);}
+var anchor=document.getElementById('ezmobfooter');if(!anchor){return;}
+anchor.innerHTML='';anchor.style.paddingTop=0;var styleElement=document.getElementById('ezoicCSS');if(!styleElement){return;}
+var cert=document.getElementById('ezoic-certification-fixed');if(cert){cert.style.bottom='15px';}
+var styles=styleElement.sheet?styleElement.sheet:styleElement.styleSheet;for(var i=0;i<styles.cssRules.length;i++){var rules=styles.cssRules[i];if(rules.selectorText==='body'&&rules.style.height==='auto'&&(rules.style.paddingTop!==''||rules.style.paddingBottom!=='')){styles.deleteRule(i);}}});}</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezogetbrkey = function(s){ var k = 'br1';var k2 = 'eb_br';if(window.ezogtk == ""){k='br1u';k2='eb_bru';}else if(window.ezogtk != "NT"){k='br1t';k2='eb_brt';} s.setTargeting('br1', s.getTargeting(k));s.setTargeting('eb_br', s.getTargeting(k2));};googletag.cmd.push(function() {ezslot_interstitial = googletag.defineOutOfPageSlot('/1254144,21977949700/chinahighlights_com-pixel1',googletag.enums.OutOfPageFormat.INTERSTITIAL); if(ezslot_interstitial != null) {ezslot_interstitial.addService(googletag.pubads()).setTargeting('bra', 'mod18').setTargeting('ic', '1').setTargeting('reft', 'n').setTargeting('avc', '116').setTargeting('tap', 'chinahighlights_com-pixel1-1822952155031467').setTargeting('bvr', '0').setTargeting('ap', '9999').setTargeting('al', '1006').setTargeting('ezoic', '1').setTargeting('d', '411667').setTargeting('iid1', '1822952155031467');}
+			googletag.pubads().enableSingleRequest();googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotResponseReceived', function(event) { __ez.queue.addFunc("ezsr", "ezsr", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotRequested', function(e) { window.ezsrqt[e.slot.getSlotElementId()] = Date.now();});googletag.pubads().disableInitialLoad();googletag.pubads().enableLazyLoad({fetchMarginPercent: 400, renderMarginPercent: 300, mobileScaling: 2.0});googletag.enableServices();});window.ezoll = false;window.ezoadxnc = '1254144';window.ezoadhb = '0';var ezaxmns={};var ezaucmns={};
+
+		var __ez_fad_floating = [];
+		var __ez_fad_gptd = __ez_fad_gptd || false;var __ez_fad_ezpbinitd = false;var __ez_fad_pbt = setTimeout(function(){__ez_fad_pb();},5000);function __ez_fad_gpt(){if(__ez_fad_gptd == false){__ez_fad_gptd=true;!function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//securepubads.g.doubleclick.net/tag/js/gpt.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(t,c)}();}}function __ez_fad_pb(){if(__ez_fad_ezpbinitd==false && typeof __ez_fad_ezpbinit == 'function'){__ez_fad_ezpbinitd = true;__ez_fad_ezpbinit()}};
+		
+	function __ez_init_slot(bvr, did, slotNum, defineFunc) {
+		googletag.cmd.push(function() {
+			defineFunc();
+			ezrpos[slotNum]=slotNum;
+			ezslots.push("ezslot_" + slotNum);
+			if(__ez.fads.kvStore[did] !== 'undefined') {
+				for (var name in __ez.fads.kvStore[did]) {
+					if (!__ez.fads.kvStore.hasOwnProperty(name)) {
+						ezSetSlotTargeting(did, name, __ez.fads.kvStore[did][name]);
+					}
+				}
+				__ez.fads.kvStore[did] = {};
+			}
+		});return "ezslot_" + slotNum;
+	}
+</script>
+<script type="text/javascript">(function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+remove_ama_config()})()</script>
+<script type="text/javascript">var ezoicTestActive = true</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod18","ad_cache_level":0,"ad_count_adjustment":2,"ad_lazyload_version":1,"ad_load_version":1,"ad_location_ids":"6","adx_ad_count":1,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"bidder_method":1,"bidder_version":5,"city":"Toronto","country":"CA","days_since_last_visit":-1,"display_ad_count":0,"domain_id":411667,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","is_from_recommended_pages":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":20,"metro_code":0,"optimization_version":1,"page_ad_positions":"1006","page_view_count":0,"page_view_id":"1f926864-29b5-4a7c-7146-d54de0834ab3","position_selection_id":46,"postal_code":"M5N","pv_event_count":0,"response_size_orig":149529,"response_time_orig":138,"serverid":"i-042fb5ce5c3634d25","state":"ON","sub_page_ad_positions":"1006","t_epoch":1689614706,"template_id":134,"time_on_site_visit":0,"url":"https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm","user_id":0,"word_count":2809,"worst_bad_word_level":0};var _ezim_d = {"chinahighlights_com-pixel1":{"adsense_stat_source_id":5,"adx_ad_count":1,"adx_stat_source_id":35,"full_id":"chinahighlights_com-pixel1/2023-07-17/1822952155031467","height":"3","position_id":1006,"sub_position_id":1006,"width":"3"}};var _ezat = {"domain_id":411667,"form_factor_id":1,"framework_id":1,"pageview_date":"2023-07-17","pageview_id":"1f926864-29b5-4a7c-7146-d54de0834ab3","template_id":134,"url":"https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm","visit_uuid":"749db55b-fb1e-4cb0-4c68-ee800d929cbc"};</script><script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=195-0&bv=244&v=75&PageSpeed=off', true, [], true, false, false, true);</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+    
+    <title>
+        Best Traditional Chinese Dishes: 15 Must-Try China Foods
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="apple-mobile-web-app-title" content="China Highlights - Since 1998!"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="Find out what Chinese dishes to try in China (customer favorites): sweet and sour pork, kung pao chicken, fried noodles... See expert intros with pictures."/>
+    
+    <meta property="og:image" content="https://images.chinahighlights.com/allpicture/2021/12/71879439c9ef4d0da835efb6_cut_750x400_39.jpg"/><meta property="og:image:secure_url" content="https://images.chinahighlights.com/allpicture/2021/12/71879439c9ef4d0da835efb6_cut_750x400_39.jpg"/><meta property="og:image:width" content="800"/><meta property="og:image:height" content="450"/>
+    <link rel="canonical" href="https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm"/>
+    <link rel="shortcut icon" href="https://data.chinahighlights.com/favicon.ico"/>
+    <link rel="preconnect" href="https://data.chinahighlights.com"/>
+    <link rel="preconnect" href="https://images.chinahighlights.com"/>
+    <link rel="dns-prefetch" href="https://data.chinahighlights.com"/>
+    <link rel="dns-prefetch" href="https://images.chinahighlights.com"/>
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="https://www.googleadservices.com"/>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+    <style type="text/css">@charset "utf-8";body {margin: 0;font-family: Calibri;color: #000;background: #fff;font-size: 19px;}h1 {font-size: 45px;line-height: 50px;padding-top: 60px;padding-bottom: 50px;font-family: 'Goudy Old Style';margin-top: 0;margin-bottom: 0;}h2 {font-size: 35px;padding-bottom: 30px;padding-top: 70px;line-height: 33px;font-family: 'Goudy Old Style';margin-bottom: 0;margin-top: 0;}h3 {font-size: 27px;padding-top: 40px;line-height: 32px;padding-bottom: 20px;font-family: 'Goudy Old Style';margin-top: 0;margin-bottom: 0;}h3 em {color: #ad1818;font-size: 29px;font-style: inherit;}p {line-height: 25px;margin-top: 0;padding-bottom: 35px;margin-bottom: 0;}a, a:hover { text-decoration: underline; color: #000; cursor: pointer;}.img-responsive, video, .table-responsive {display: block;max-width: 100%;height: auto;overflow-x: auto;}.updated_news {top: 66px;display: block;width: 100%;background: #871010;position: relative;padding: 5px 0;color: #fff;text-align: center;font-size: 17px;z-index: 9;}.updated_news a { color: #fff;}.bottom_why_us {background: url(https://data.asiahighlights.com/image/about/ah-bottom-why-us-bg-pc.jpg) center #565656;background-size: cover;height: 500px;padding-top: 50px;}.bottom_why_us h2 {text-align: center;color: #fff;padding-top: 40px;}table.why_us_table { width: 1140px;margin: 20px auto 0 auto;color: #fff;}.bottom_why_us_content {text-align: center;padding: 0 15px; height: 335px;}.bottom_why_us_content img {width: 60px;margin: 0 auto;}.bottom_why_us_content h3 {font-size: 21px; margin-top: -25px;}.bottom_why_us_content p {font-size: 18px;}.bottom_destinations { background: #333;padding: 50px 0 30px 0;color: #fff;position: relative;}.bottom_destinations ul { display: inline-block;}.bottom_destinations ul li a { color: #fff; text-decoration: none;}.bottom_destinations ul li { font-family: 'Goudy Old Style';border-left: 5px solid #862424;padding-left: 15px;font-size: 18px;font-weight: 600;margin-bottom: 10px !important;list-style: none;margin-right: 40px;}.destination_links { width: 100%;}.web_cookie { background-color: #f1f1f1;position: fixed;bottom: 0;box-shadow: -2px -2px 4px 0px #ececec;width: 40%;z-index: 9999;right: 0;}.web_cookie p { display: inline-block;padding: 10px 0 10px 15px;line-height: 18px;font-size: 16px;width: 88%;}.wechat_button {position: fixed;z-index: 999999;width: 65px;height: 65px;bottom: 10px;}.wechat_button a {display: block;color: #fff;text-decoration: none;font-size: 17px;font-weight: 600;text-align: center;padding: 23px 10px 0 7px;line-height: 18px;height: 58px;background: #ad1818;border-radius: 50%;text-transform: uppercase;}:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus {-webkit-text-fill-color: #000; -webkit-box-shadow: 0 0 0px 1000px #fff inset;transition: background-color 5000s ease-in-out 0s;font-weight: 400;}.adsbygoogle { height:auto !important; margin:50px 0 !important;}#videoPlayer { position:inherit !important; min-width: 100%; border-radius: 6px; }a.infocustomize {font-size: 16px;color: #fff;padding: 4px 15px;background: #ad1818;border-radius: 25px;text-decoration: none;font-weight: 600;text-transform: uppercase;}.headerbar {z-index: 999;}.start-nav-item {text-transform: none;}.start-nav-item a:hover {border-bottom: none !important;}.sidebar .start-nav-item {width: 30%;height: 30px;}.guide_block {width: 31%;display: inline-block;float: left;margin-right: 28px;}.navisgation_title_pc { color: #ad1818; border-bottom: 1px solid #d1d1d1; padding-bottom: 5px; margin-bottom: 10px; font-size: 18px;font-family: 'Goudy Old Style'; font-weight: 600;}ul.guide_links {padding-left: 0;}ul.guide_links li {width: 100%; margin-bottom: 3px;}.bottommedia {width: 50%;float: left;padding-left: 25px;}.featureon { padding: 0 25px 30px 25px;}.followtitle {text-transform: uppercase;display: block;margin-bottom: 20px;}.whatsnew {border: 5px dashed #d2d2d2;margin-top: 65px;min-height: 90px;margin-bottom: 30px;position: relative;padding: 30px 15px 15px 15px;border-radius: 10px;}.whatsnew img {position: absolute;top: -75px;}.infocategory {font-size: 17px;margin-top: 15px;}.infocategory a {margin: 0 20px 0 0;text-decoration: none;}.infocategory a:after {content: "";position: absolute;width: 4px;height: 4px;transition: transform 0.5s;-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);border-top: 2px solid;border-right: 2px solid;transform: rotate(45deg);margin-top: 9px;margin-left: 5px;}.authorupdate {font-size: 16px;margin: -40px 15px 60px 15px;}.authorupdate strong {border-right: 1px solid #dcdcdc;padding-right: 10px;margin-right: 10px;}.infoimage, .infovideo {clear: both;margin: 0 auto 30px auto; color: #999; font-size: 17px;}.infoimagetitle {margin-top: 10px; display: block;}.infoimage img { --tw-shadow: 0px 4px 15px 2px rgba(70,70,70,0.3); box-shadow: 0 0 transparent,0 0 transparent,var(--tw-shadow); border-radius: 6px; margin-bottom: 5px;}.photoBlock300 {font-size: 18px;font-style: italic;float: right;width: 300px;margin-left: 30px;margin-bottom: 30px;color: #999;line-height: 20px;}table.weather_info {border: 1px solid #d1d1d1;}.today_weather { padding: 15px 0; background-color: #f6f6f6;}.weather_img img {width: 50px; margin: 0 auto; margin-bottom: 20px;}.day_weather {border-right: 1px solid #d1d1d1;text-align: center;width: 140px;}.day_weather p {padding-bottom: 15px; }.last_day_weather {border-right: none;}p#todayDate, p#forecastDate1, p#forecastDate2, p#forecastDate3, p#forecastDate4, p#forecastDate5, p#forecastDate6 {font-size: 22px;}table.infotable, table.monthWeather {border-left: 1px solid #d1d1d1;border-spacing: 0;margin-bottom: 30px;width: 100%;}table.infotable th, table.monthWeather th {background: #f6f6f6;padding: 15px 10px;font-family: 'Goudy Old Style';border: 1px solid #d1d1d1;border-left: none;font-size: 20px;line-height: 25px;}table.infotable td, table.monthWeather tr td {padding: 15px;border-right: 1px solid #c9c9c9;border-bottom: 1px solid #c9c9c9;font-size: 18px;line-height: 22px;}table.infotable tr:nth-child(odd) td, table.monthWeather tr:nth-child(odd) td {background: #f7f7f7;}.detailtopbanner img { margin: 0 auto;}.info_page_reco { width: 220px; margin-right: 15px; margin-top: 15px;}.info_page_reco img {--tw-shadow: 0px 4px 5px 2px rgba(70,70,70,0.3);box-shadow: 0 0 transparent,0 0 transparent,var(--tw-shadow);border-radius: 6px;margin-bottom: 5px;}.info_reco_name {font-size: 19px;position: relative;padding: 10px 0 0 0;height: 95px;font-family: 'Goudy Old Style';font-weight: 600;}.info_reco_name a { text-decoration: none;}ol.drop1 li {padding-left: 10px;line-height: 25px;margin-bottom: 10px;}ul.infolist li, ul.drop1 li, ul.ghlist li {list-style: square;margin-bottom: 15px;}ul.infolist, ul.drop1, ol.drop1, ul.ghlist {padding: 0 0 30px 0;display: table;margin: 0 20px;}ul.sub_catalog {margin: 15px;}ul.catalog {padding: 0 15px 0 0; margin-top: 0; }ul.catalog li {list-style: none;margin-bottom: 10px;line-height: 23px;}ul.catalog li a:before {content: "";width: 5px;height: 5px;border-top: 2px solid #000;border-right: 2px solid #000;float: left;transform: rotate(45deg);margin-right: 10px;margin-top: 8px;}.pc_content {width: 750px;float: left;max-width: 100%;min-height: 590px;}.right_tour {position: sticky;top: calc(100% - 530px);z-index: 9999;margin-top: 30px;}.right_brand_info, .right_tour {width: 340px;float: right;}.articlereco {width: 1140px;margin: 120px auto;}.recotitlebg h2 {text-align: center;font-size: 30px;color: #000;padding: 0 0 20px 0;}.updatearticle {background: #efefef;margin: 50px 15px;position: relative;}.articlenexttitle {font-weight: 600;padding: 10px 15px;display: block;font-family: 'Goudy Old Style';height: 75px;background: #f1f1f1;border-radius: 0 0 6px 6px;}.articlenexttitle a { text-decoration: none;}.articlenext {width: 280px;margin-bottom: 5px;background: none;border-radius: 6px;margin-right: 15px;}.articlenext img { border-radius: 6px 6px 0 0;}.infotailor {background: #ececec;height: 280px;position: relative;z-index: 9;}.infotailorword {position: absolute;top: calc(100% - 265px);font-size: 25px;text-align: center;line-height: 30px;font-family: 'Goudy Old Style';font-weight: 600;width: 100%;}.infotailorbutton {position: absolute;top: calc(100% - 210px);background: #fff;display: block;margin: 0 auto;width: 200px;text-align: center;font-size: 18px;left: calc(100% - 285px);text-transform: uppercase;}.infotailorbutton a {width: 200px;display: block;padding: 15px 0;}.bottomwechat {display: block;margin-bottom: 50px;height: 100px;padding: 0 15px;}.bottomwechat img {float: left;margin-right: 20px;}.TopNavi { font-size: 16px;display: block;float: left;text-align: center;width: 25%; }.TopNavi a, .TopNaviLast a {height: 30px;display: block;padding-top: 8px;border-right: 1px solid #d2d2d2;text-decoration: none;}.TopNaviLast {font-size: 16px;text-align: center;width: 25%;}.TopNaviLast a { border-right: none;}img.bottomright {width: 49%;}img.bottomleft {width: 49%;margin-right: 6px;float: left;}.hoteltitle {display: block;font-size: 22px;margin-top: -20px; }.tourprice {background: #f6f6f6;padding: 30px 15px;margin-bottom: 20px;}.pricefrom {display: block;font-size: 16px;padding: 0 15px;}.pricefrom strong {color: #ad1818;font-size: 23px;margin-left: 10px;margin-right: 10px;font-style: italic;}.priceterm {font-size: 18px;margin-top: 10px;display: block;border-bottom: 1px solid #d2d2d2;padding: 0 15px 15px 15px;margin-bottom: 15px;line-height: 20px;}.info_reco_tours {font-size: 22px;font-family: 'Goudy Old Style';border-left: 5px solid #ad1818;font-weight: 600;background: #f6f6f6;margin-bottom: 10px;padding: 5px 15px;}.info_reco_tours em {color: #ad1818;margin-right: 10px;text-transform: uppercase;font-size: 24px;}.info_page_contact_us {position: relative; --tw-shadow: 0px 4px 15px 2px rgba(70,70,70,0.3);box-shadow: 0 0 transparent,0 0 transparent,var(--tw-shadow); }.info_page_contact_us_bg {width: 100%;position: absolute;height: calc(100% - 200px);bottom: 0;}.info_page_contact_us_word {color: #fff;font-size: 23px;padding: 0 0 0 30px;font-family: 'Goudy Old Style';font-weight: 600;text-shadow: 1px 1px 1px #000;position: absolute;bottom: 20px;width: 80%;padding-left: 20px;}.info_page_contact_us_word strong {font-size: 40px; display: block; text-transform: uppercase;}.info_page_contact_us_word strong a { color: #fff;}.info_page_contact_us_button {position: absolute;right: 20px;bottom: 20px;}.info_page_contact_us_button a {width: 55px;height: 55px;display: block;background: #ad1818;border-radius: 50%;color: transparent;}.info_page_contact_us_button a:after {content: "";position: absolute;width: 15px;height: 15px;transition: transform 0.5s;-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);border-top: 5px solid #fff;border-right: 5px solid #fff;transform: rotate( 45deg );margin-top: 17px;margin-left: 5px;}select.country_code {margin-right: 5px;border: none;font-size: 16px;color: #555;height: 43px;padding-left: 10px;background: #fff;width: auto;box-shadow: none;border: 1px solid #d1d1d1;margin-left: 0;float: left;}.checkYes {margin-bottom: 15px;float: left;text-align: left;font-size: 19px;margin-right: 20px;}.checkYes input {float: left !important;margin-right: 10px !important;margin-bottom: 10px !important;margin-left: 0 !important;width: 20px !important;height: 25px !important;}.selectionBlock {display: inline-block;width: 100%;margin-bottom: 25px;}.travel_group {float: left;width: 19%;margin-right: 40px;}.travel_group input {display: none;}.travel_group input[type="radio"]+label {background: #fff;width: 100%;display: inline-block;margin-top: 10px;margin-right: 10px;background: #fff;font-size: 19px;border: 1px solid #d1d1d1;border-radius: 4px;text-align: center;color: #000;padding: 10px;line-height: 18px;}.age_range p {margin-bottom: 0;font-size: 19px !important;font-weight: 400 !important;text-align: left !important;}.kidNum, .number {width: 30% !important;text-align: center;border: 1px solid #d1d1d1;border-radius: 4px;height: 30px !important;font-size: 25px !important;position: relative;top: -5px;padding: 10px !important;}.info_ad_content {position: absolute; bottom: 0; width: 100%;}.info_ad { position: relative;}.info_ad_button {background: #ad1818;border-radius: 50%;text-align: center;padding-top: 8px;width: 60px;position: absolute;right: 15px;bottom: 15px;}.info_ad_button a {display: block;height: 60px;margin-top: -10px;}.info_ad_button a:after {content: "";position: absolute;width: 15px;height: 15px;transition: transform 0.5s;-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);border-top: 5px solid #fff;border-right: 5px solid #fff;transform: rotate( 45deg );margin-top: 18px;margin-left: -13px;}.info_ad img { border-radius: 6px;}.info_ad_name {padding: 15px 15px 10px 5px;bottom: 0;position: absolute;}.info_ad_name a { display: inline-block;color: #fff;padding: 10px 55px 10px 10px;text-decoration: none;text-shadow: 2px 1px 1px #000;}.info_ad_name strong {line-height: 32px;font-size: 30px;margin-bottom: 10px;font-family: 'Goudy Old Style';display: block;}.poparticle { position: relative;margin: 0 10px 10px 0;width: 370px;}.poparticle a { position: absolute;width: 100%;height: 100%;bottom: 0;background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;border-radius: 6px;}.poparticle img { border-radius: 6px;}.confidence_bg {position: relative; background: #f6f6f6; border-radius: 6px; display: inline-block; margin-top: 100px; padding: 0 0px 20px 15px;margin-bottom: 100px;}.confidence_tag {position: absolute;left: calc(100% - 670px);right: 0;width: fit-content;top: -75px;}.confidence_tag img { width: 120px; height: 120px;}.confidence_content {background: #fff; padding: 0 30px 20px 30px;width: 41%;border-radius: 6px; margin: 0 20px;height:695px; box-shadow: 0px 0px 3px 1px #e5e5e5;margin-bottom: 50px;}.confidence_content_100 {background: #fff;box-shadow: 0px 0px 3px 1px #e5e5e5;padding: 1px 30px 20px 30px;margin-left: 20px;width: calc(100% - 115px);border-radius: 6px;margin-bottom: 50px;}.confidence_customer {display: inline-block;}.confidence_customer img.confidence_image {position: absolute;left: 40px;width: 500px;margin-top: 20px;}.confidence_content_half {background: #fff;padding: 0 30px 20px 30px;width: 55%;border-radius: 6px;height: 485px;margin-bottom: 50px;position: relative;float: right;margin-right: 40px;}.all_width_content_contact {background: #555;padding: 30px 0;}.all_width_content_contact p {text-align: center; font-size: 27px; font-style: italic; margin-bottom: 0;}.all_width_content_contact p a {color: #fff; border-bottom: none;}.all_width_content_contact p a:hover { background: none; }.risk-free {position: relative; background: #fff; width: 30%; border-radius: 4px; margin: 0 5px; padding:50px 15px 15px 15px;margin-top: 70px; }.risk_free_tag { position: absolute;left: calc(100% - 70%);top: -55px;}.risk_free_tag img { width: 90px; height: 90px;}.feedback_content img { border-radius: 50%; float: left;margin-right: 20px;}.content_name { color:#999; margin-bottom: 5px;}img.feedback-rate {border-radius: 0;}.feedback_logo { width: 220px;}.tour_feedback {width: 370px;height: 315px;font-size: 18px;margin: 0 20px 0 0;}.feedback_content {line-height: 21px;font-style: italic;margin-bottom: 15px;padding: 40px 0 0 50px;background: url(https://data.asiahighlights.com/image/tour/asia/china-tours-feedback-bg-left.png) no-repeat 15px 30px;background-size: 30px;}.feedback_content strong {display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;margin-bottom: 10px;font-size: 20px;height: 45px;}.feedback_content p {display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;padding-bottom: 0;height: 125px;padding: 0;}.customer_name {color: #999;margin: 15px 0 5px 0;}.tour_feedback img {margin: 0 auto;width: 100px;}.review_date {display: inline-block;font-size: 18px;height: 50px;padding-left: 10px;color: #999;}.traveler_story {margin: 50px 0; display: flex;}.traveler_story img {width: 600px; height: 550px;}.traveler_story_content {margin-left: 50px; width: 2800px;}table.confidence {width: 3023px;}.traveler_story_content h2 {padding-right:0; margin-top: 15px;}.story_keyword {font-weight: 600; color: #ad1818; margin:-10px 0 15px 0;}.homepage_confidence_content {display: flex;margin: -15px 0 -10px 0; justify-content: center;}.homepage_confidence {width: 100%;}.homepage_confidence .fa {color: #ad1818; margin-left: 10px;}.homepage_confidence img {margin-right: 10px;width: 35px;height: 35px;float: left;}.confidence_word { font-weight: 600; padding-top: 10px;}table.story_table {width: 600px;display: inline-block;float: left;margin-right: 50px;}.destinations { float: left;width: 55%;}.chinamap_travelguide {width: 45%;display: inline-block;margin-top: 120px;}.all_width_content {background: #f6f6f6;padding: 30px 0;margin-top: 80px;}.all_width_content_1200 {width:1140px; margin: 0 auto;}.list_content {width: 1140px; margin: 0 auto;}.experienceimg {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;}.experience {float: left;position: relative;margin-right: 10px;margin-bottom: 10px;}.beijingexperienceinfo {position: absolute;bottom: 0;color: #fff;width: calc(100% - 20px);background: rgba(0, 0, 0, 0.45);padding: 20px 10px 21px 10px;text-align: center;height: calc(100% - 41px);}.experience_name {display: block;font-size: 25px;font-weight: 600;font-family: 'Goudy Old Style';margin-bottom: 25px;position: relative;top: calc(100% - 250px);text-shadow: 1px 1px 1px #000;}.tourleft { position: relative; float: left; margin-right: 20px; width: 50%; }.tourleftinfo {position: absolute;bottom: 0;padding: 20px;}.recotourname {font-size: 35px;font-weight: 600;color: #fff;display: block;margin-bottom: 10px;line-height: 40px;font-family: 'Goudy Old Style';}.recotourname a {text-decoration: none;color: #fff;}.destinationtop {color: #fff;margin-bottom: 15px;position: relative;top: calc(100% - 260px);font-size: 20px;}.destinationtop a {font-size: 18px;color: #fff;border: 2px solid #fff;padding: 2px 10px;text-transform: uppercase;display: inline-block;margin-top: 10px;text-decoration: none;}ul.expatstourtag {display: flex;padding-left: 20px;}ul.expatstourtag li {color: #fff;list-style: square;margin-right: 30px;font-size: 18px;}.tourbutton {font-size: 18px;text-transform: uppercase;margin: 10px auto;border: 2px solid #ad1818;background: #fff;font-weight: 600;width: max-content;color: #ad1818;display: block;}.tourbutton a {text-decoration: none;color: #ad1818;padding: 5px 20px;display: block;}.tourbutton a:hover { color: #fff; background: #ad1818; transition: 0.5s; } .righttour {margin-bottom: 18px;display: flex;position: relative;}.righttour img {float: left;width: 325px;}.rightinfo {background: #f6f6f6;padding: 20px;border-left: none;width: 220px;min-height: 192px;}.rightname {display: block; margin-bottom: 5px;font-weight: 600;font-family: 'Goudy Old Style';}.rightname a { text-decoration: none;}.rightdestination {font-size: 18px;}.listtour {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: left;clear: both;}.xmas_tag {position: absolute;left: -7px;top: -20px;}.xmas_tag img { width: 197px; height: 45px;}.expatstour {background: #fff;width: 275px;margin: 0 10px 10px 0;position: relative;}.tourdetailinfo {padding: 15px;background: #f6f6f6;height: 280px;}.tourdetailinfo p { padding: 0; text-align: center;}.tourdetailinfo ul.infolist li {height: 45px !important;}.expatstourname {display: block;text-align: center;font-size: 19px;line-height: 21px;font-weight: 600;font-family: 'Goudy Old Style';margin-bottom: 15px;height: 65px;}.expatstourname a {color: #000;text-decoration: none;}.citytourname { font-family: 'Goudy Old Style';text-align: center;font-weight: 600;line-height: 22px;padding: 15px;position: absolute;bottom: 0;color: #fff;text-shadow: 1px 1px 1px #000;font-size: 22px;width: calc(100% - 30px);}.moretour {font-size: 23px;text-align: center;font-weight: 600;margin-bottom: 20px;margin-top: 30px;font-family: 'Goudy Old Style';}.InquiryButtonTour { text-align: center;font-size: 22px;}.InquiryButtonTour a {padding: 10px;color: #fff;display: block;border-bottom: none;border-radius: 4px;background: #ad1818;width: 40%;margin: 0 auto;text-decoration: none;}.InquiryButtonTour a:hover { background: #ad1818; color: #fff; }.cruise_top_info {float: left;width: 710px;padding-right: 30px;}.cruise_price { background: #f7f7f7;border-radius: 4px;padding: 35px;font-size: 22px;display: inline-block;width: 330px; font-weight: 600;}.cruise_price_number { text-align: center; margin-top: 20px;}.cruise_price_number strong {color: #ad1818; font-size: 27px; margin-right: 10px; font-style: italic;}.cruise_button {background: #ad1818;text-transform: uppercase;font-size: 18px;text-align: center;margin: 20px auto;display: block;width: 185px;padding: 8px 0;}.cruise_button a { color: #fff;padding: 10px 30px;}table.cruise_highlights {width: 6000px;}.cruise_highlights {position: relative;}.highlights_info {position: absolute;bottom: 0;color: #fff; text-align: center;height: 100px;width: 100%;}.highlights_info p {color: #fff;margin-bottom: -23px;padding-bottom: 0;font-size: 22px;text-shadow: 1px 1px 1px #000;position: relative;bottom: -50px;}.cabin_info_detail { display: inline-block;}.cabin_info img {float: left;margin-right: 80px;}.cruise_index_top_info {float: left;width: 710px;margin-right: 50px;}.cruise_index_calendar {display: inline-block;border-radius: 4px;width: 350px;padding: 15px;background: #ececec;}.cruise_index_calendar h3 {text-align: center;font-style: italic;font-weight: 600;margin-top: 10px;}.cruise_year {background: #fff;display: inline-block;border-radius: 4px;}ul.calendar_year { list-style: none;font-size: 25px;text-align: center;margin: 10px 20px 0px 20px;display: inline-block;width: calc(100% - 40px);padding-left: 0;border-bottom: 3px solid #ececec;padding-bottom: 5px;}ul.calendar_year li.active {float: left;color: #ad1818;font-weight: 600;width: 50%;}ul.calendar_year li {float: left;width: 50%;}ul.calendar_month {font-size: 18px; list-style: none;padding-left: 30px;}ul.calendar_month li {float: left;background: #f7f7f7;text-align: center;padding-top: 8px;border-radius: 4px;margin-right: 10px;margin-bottom: 15px;width: 65px;height: 32px;}ul.calendar_month li.cruise_available {float: left;width: 62px;height: 38px;text-align: center;border: 1px solid #ad1818;border-radius: 4px;margin-right: 10px;margin-bottom: 15px;padding-top: 0;}ul.calendar_month li.cruise_available a {color: #ad1818;display: inline-block;width: 62px;height: 30px;padding-top: 8px;}ul.calendar_month li.cruise_available a:hover { color: #fff; background: #ad1818; }#Cruiseprice input { background: #fff;}table.table-bordered { border-left: 1px solid #d1d1d1;border-spacing: 0;width: 100%;}table.table-bordered th {font-weight: 400;background: #555;padding: 15px 10px;border-top: 1px solid #d1d1d1;border-right: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;color: #fff;}table.table-bordered td {padding: 15px;border-right: 1px solid #c9c9c9;border-bottom: 1px solid #c9c9c9;font-size: 18px;line-height: 22px;}table.table-bordered tr:nth-child(odd) td {background: #f6f6f6;}ul.nav-tabs { display: inline-block;padding-left: 0;margin-bottom: -54px;height: 88px;}ul.nav-tabs li { float: left;margin-bottom: -1px;list-style: none;font-size: 18px;margin-right: 10px;border: 1px solid #d1d1d1;border-bottom: none;padding: 8px 15px;border-radius: 4px 4px 0 0;}ul.nav-tabs li.active { background: #555; border: none;}ul.nav-tabs li.active a { color: #fff;}table.table-bordered td .quotation { font-weight: 600; font-style: italic;margin-bottom: -15px;display: block;}.Search {background: #ececec;border-radius: 4px;padding: 25px 15px;margin-bottom: 30px;}.FindCruise { margin-bottom: 20px;font-weight: 600;display: block;text-align: center;text-transform: uppercase;}.RouteSearch, .DateSearch {display: inline-block;float: left;margin-right: 20px;font-size: 18px;margin-top: -5px;}select.route {font-size: 16px;color: #333;height: 35px;padding: 0 8px;border: medium none;border-radius: 4px;width: 285px;box-shadow: 0 0 2px #999;}input.dateicon {font-size: 16px;width: 150px;color: #333;height: 35px;width: 125px;padding: 0 8px;border: medium none;border-radius: 4px;box-shadow: 0 0 2px #999;background: url(https://data.chinahighlights.com/css/images/calender.GIF) 95% 10px no-repeat #fff;}.searchNow {background: #ad1818;display: inline-block;margin-top: -3px;padding: 3px 0px;}.searchNow a {color: #fff;font-size: 18px;padding: 5px 15px;}.CityTag {width: calc(100% - 30px);color: #fff;position: absolute;padding: 15px;text-shadow: 1px 1px 1px #000;font-family: 'Goudy Old Style';font-weight: 600;bottom: 0;font-size: 20px;line-height: 20px;}.CityTag strong {font-size: 25px;display: block;font-family: 'Goudy Old Style';margin-bottom: 5px;line-height: 25px;}.CityTag:hover {text-decoration: underline;}#expandAll {float: right;cursor: pointer; padding-bottom: 10px;font-style: italic;color: #ad1818;}.tripnotes {margin: 15px 0 30px 0;font-size: 20px;clear: both;border-top: 1px solid #d1d1d1;cursor: pointer;padding: 10px 25px 0 0;line-height: 27px;}.tripnotes .CloseIcon {background: url(//data.chinahighlights.com/pic/close-icon-bj-1.png) no-repeat;height: 20px;width: 20px;cursor: pointer;position: relative;float: right;display: block;top: 0;}.tripnotes .OpenIcon {background: url(//data.chinahighlights.com/pic/open-icon-bj-1.png?20180227) no-repeat;height: 20px;width: 20px;cursor: pointer;position: relative;float: right;display: block;top: 0;}.tour_img_title { position: relative;} .city_reco_tour { width: calc(100% - 40px);display: block;margin-top: -15px;padding: 25px 15px 0px 15px;margin-bottom: 30px;background: #f6f6f6;}.menu {position: fixed;background: #333;z-index: 9999999;top: 49px;width: 100%;height: 100vh;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);-webkit-transition: -webkit-transform 0.3s;transition: transform 0.3s;}.menu__level {position: absolute;left: 0;visibility: hidden;overflow: hidden;overflow-y: scroll;width: calc(100% + 50px);height: 100%;margin: 0;padding: 0;top: 120px;list-style-type: none;}.menu__level:focus {outline: none;}.menu__level--current {visibility: visible;}.menu__item {width: calc(100% - 50px);margin-bottom: 0;}.menu__link {font-weight: 600;position: relative;display: block;padding: 5px 20px;color: #fff;font-size: 21px;font-family: 'Goudy Old Style';text-decoration: none;}.menu__link[data-submenu]::after {content: "";position: absolute;width: 10px;height: 10px;transition: transform 0.5s;-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);border-top: 3px solid #f6f6f6;border-right: 3px solid #f6f6f6;float: right;top: 15px;right: 20px;transform: rotate( 45deg );}.menu__link:hover,.menu__link:focus,.menu__link[data-submenu]:hover::after,.menu__link[data-submenu]:focus::after {color: #f6f6f6;}.menu__link--current::before {content: '\00B7';font-size: 1.5em;line-height: 0;position: absolute;top: 50%;left: 0.5em;height: 4px;color: #f6f6f6;}[class^='animate-'],[class*=' animate-'] {visibility: visible;}.animate-outToRight .menu__item {-webkit-animation: outToRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);animation: outToRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);}@-webkit-keyframes outToRight {to {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}@keyframes outToRight {to {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}.animate-outToLeft .menu__item {-webkit-animation: outToLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);animation: outToLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);}@-webkit-keyframes outToLeft {to {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}}@keyframes outToLeft {to {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}}.animate-inFromLeft .menu__item {-webkit-animation: inFromLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);animation: inFromLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);}@-webkit-keyframes inFromLeft {from {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}to {opacity: 1;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}@keyframes inFromLeft {from {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}to {opacity: 1;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}.animate-inFromRight .menu__item {-webkit-animation: inFromRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);animation: inFromRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);}@-webkit-keyframes inFromRight {from {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}to {opacity: 1;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}@keyframes inFromRight {from {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}to {opacity: 1;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}.menu__breadcrumbs {font-size: 16px;line-height: 1;position: relative;padding: 25px 20px;}.menu__breadcrumbs a {font-weight: bold;text-transform: uppercase;color: #fff;}.menu__breadcrumbs a:last-child {pointer-events: none;}.menu__breadcrumbs a:hover,.menu__breadcrumbs a:focus {color: #000;}.menu__breadcrumbs a:not(:last-child)::after {content: '←';display: inline-block;padding: 0 0.5em;}.menu__breadcrumbs a:not(:last-child):hover::after,.menu__breadcrumbs a:not(:last-child):focus::after {color: #999;}.menu__back {position: absolute;border: none;background: none;}.menu__back--hidden {pointer-events: none;opacity: 0;}.menu__back:hover,.menu__back:focus {color: #fff;outline: none;}.menu--open {transform: translate3d(0, 0, 0);}.action {position: absolute;display: block;margin: 0;padding: 0;cursor: pointer;border: none;background: none;}.action:focus {outline: none;}.action--close {top: 1.25em;right: 1em;display: none;}.action--close {display: block;}.infobottom ul li {list-style: none;margin-bottom: 30px;}.infobottom ul li svg {background: #999;border-radius: 50%;padding: 5px;margin-right: 10px;float: left;margin-top: -10px;width: 25px;height: 25px;}.bottommedia ul {padding-left: 0;display: inline-block;margin-left: 0;margin-top: 0;}.bottommedia ul li a {color: #fff;font-size: 16px;text-transform: uppercase;text-decoration: none;}.followtitle a {color: #fff;}.bottomlinks ul li {font-size: 18px;text-transform: uppercase;margin-bottom: 10px;width: 100%;}.bottomlinks ul {display: inline-block;padding-left: 0;margin-top: 0; }.bottomlinks ul li a {color: #fff;text-decoration: none;}.aboutusleft {width: 50%;float: left;display: inline-block;}.bottomaboutus {margin-bottom: 50px;}.bottompctitle {font-size: 18px;text-transform: uppercase;color: #999;font-weight: bold;width: 23%;float: left;}.aboutusinfo {font-size: 17px;line-height: 23px;padding-right: 20px;color: #fff;}.aboutusinfo a {color: #fff;}.bottomfollowus ul {padding-left: 10px;display: inline-block;margin-left: -15px;margin-top: 0;}.bottomfollowus ul li {float: left;margin-right: 20px;}.bottomfollowus ul li a {color: #fff;text-transform: uppercase;text-decoration: none;}.aboutusright {width: 50%;display: inline-block;}img.bottomfeature {margin-left: 15px;}.bottomaboutuslinks {border-top: 1px solid #797979;margin-top: 0;}.bottomlinksleft {width: 75%;float: left;}ul.withBorder {padding: 0;margin-top: 10px;}ul.withBorder li {display: inline;margin-right: 20px;}ul.withBorder li a {color: #b1b1b1;text-decoration: none;font-size: 17px;}.bottommembers {width: 25%;display: inline-block;padding-top: 15px;}.bottommembers img {display: inline-block;}.memberIcons {text-align: right;}img.bottomlogopc {float: left;margin-right: 30px;}.bottomcopyright {font-size: 18px;display: inline-block;padding-top: 30px;}.main_content {width: 1140px;margin: 0 auto;}.dropdown-content {width: 100%;left: 0;display: none;position: absolute;}.dropdown:hover .dropdown-content {display: block;}#palmreading {border: 1px solid #d1d1d1;padding: 0 15px;box-shadow: 0px 0px 4px 1px #d1d1d1;border-radius: 6px;}.pickpalmline {display: inline-block;clear: both;}.linepick { float: left; width: 25%; height: 330px;}.pickpalmline label { display: inline-block;max-width: 100%;padding: 10px;margin: 0 5px; border-radius: 4px;}.pickpalmline label:hover {cursor: pointer;border: 2px solid #ad1818;} label.selected {border: 2px solid #ad1818;} .pickpalmline .linepick:checked+label:hover {cursor: pointer;border: 2px solid #ad1818;}input.linepick {display: none;}#palmreading button { background: #ad1818;border: none;color: #fff;display: block;margin: 30px auto;border-radius: 4px;padding: 7px 30px;cursor: pointer;font-size: 18px;}.lineinfo { text-align: center;padding: 0 5px;}#idzodiac {background: #e3d5bf;clear: both;padding: 20px 20px 0 20px;border-top: 1px solid #f0f0f0;margin-top: 30px;}.zodiacsign {float: left;margin: 0 auto 30px auto;width: 22.3%;padding: 0 5px;}.zodiacsign img {margin: 0 auto 5px auto;}.zodiacname {text-align: center;font-family: 'Goudy Old Style';}.zodiacname b {display: block;margin-top: 5px;} .zodiacknowledge {background: #f5f0e2;clear: both;margin-bottom: 50px;padding: 15px;}#zodiacFind {background: url(https://data.chinahighlights.com/image/travelguide/zodiac/zodiac-find-bg.png) no-repeat top right #e3d5bf;margin-bottom: 30px;padding-bottom: 30px;}.findzodiac {text-align: center;width: 100%;display: inline-block;margin: 30px auto;font-size: 22px;}.signsearch {background: #ad1818;color: #fff;font-size: 20px;width: 280px;display: block;margin: 0 auto;padding: 5px 0;border-radius: 25px;border: none;}#zodiacFind label {display: block;}label select {margin: 0 200px;width: 46%;height: 35px;border-radius: 4px;font-size: 18px;border: 2px solid #a6937c;margin-bottom: 15px;}.compatiblesearch {padding: 20px 0 0 0;border: 1px solid #d1d1d1;box-shadow: 0px 0px 8px 1px #d1d1d1;border-radius: 4px;background: url(https://data.chinahighlights.com/image/travelguide/zodiac/chinese-zodiac-love-compatibility-bg.jpg) no-repeat;}.compatibletitle {text-align: center;font-size: 25px;margin-bottom: 20px;font-weight: 600;font-family: 'Goudy Old Style';}.aniTab2 {padding: 0 160px;}.aniTab2 .name { font-size: 18px;}.aniTab2 input {width: 200px;height: 30px;border: 2px solid #a6937c;border-radius: 4px;font-size: 18px;padding: 0 15px;margin-left: 5px;}#imageField {font-size: 22px;border: none;background: #ad1818;color: #fff;text-align: center;width: 250px;padding: 7px 0;border-radius: 4px;box-shadow: none;}.aniTab5 {margin: 30px 0;padding: 0 215px;}.resultred{ font-size: 22px;color: #ad1818;font-weight: 600;}ul.zodiacsignlist, ul.ah_list {display: inline-block;width: 100%;padding-left: 0;}ul.zodiacsignlist li, ul.ah_list li { cursor: pointer;font-size: 18px;list-style: none;float: left;background: #3a3a32;color: #fff;text-align: center;padding: 10px 0;margin-bottom: 2px;margin: 0 1px 2px 1px;display: inline-block;width: 19.4%;}ul.zodiacsignlist li.active, ul.ah_list li.active { background: #ad1818;}ul.zodiacsignlist li a, ul.ah_list li a { color: #fff;}.contactwechat {height: 100px;margin: 30px auto 35px auto;width: 445px;font-weight: 600;font-style: italic;}.contactwechat img {box-shadow: 1px 1px 5px 1px #d2d2d2;float: left;margin-right: 10px;}.wechatinfo {padding: 20px 0;display: table-cell;font-size: 20px;line-height: 25px;}.wechatred {color: #ad1818;}.requiredArea {color: #ad1818;text-align: left;display: block;font-size: 16px;font-style: italic;border-bottom: 1px dashed #ad1818;margin: 10px 15px;}.zodiacsign_content { display: inline-block;}.selectHotl {width: 100%;text-align: center;display: inline-block;margin-bottom: 40px;margin-top: -20px;}.optionLable {width: 31.8%;display: inline-block;margin-top: 10px;float: left;margin-right: 10px;background: #fff;}.optionLable input {display: none;}.optionLable input[type="radio"]+label {font-size: 19px;border: 1px solid #d1d1d1;border-radius: 4px;display: block;text-align: center;color: #000;min-height: 40px;padding: 10px;font-family: Calibri;line-height: 22px;}.selectionMemo {font-size: 20px;font-style: italic;font-weight: 600;margin-top: 2px;color: #ad1818;}.optionLable input[type="radio"]+label:hover {border: 2px solid #ad1818;cursor: pointer;color: #ad1818;}.optionLable input[type="radio"]:checked+label {border: 2px solid #ad1818;color: #ad1818;}.peopleSelect {width: 33%;display: inline-block;float: left;}.age_range {display: inline-block;margin-top: 50px;}.travel_group input[type="radio"]+label:hover, .travel_group input[type="radio"]:checked+label {cursor: pointer;color: #fff;background: #ad1818;}.formMemo {font-size: 18px;display: block;margin-bottom: 10px;}.numberBtn {width: 100%;display: flex;}.minaddBtn {background: #FFF;border: 1px solid #d1d1d1;border-radius: 4px;color: #ad1818;width: 20% !important;font-size: 35px;margin-top: 5px;cursor: pointer;padding: 5px 10px 5px 10px !important;margin-right: 5px;}.kidNum, .number {width: 35% !important;text-align: center;border: 1px solid #d1d1d1;border-radius: 4px;height: 30px;font-size: 25px;position: relative;top: -3px;padding: 10px !important;}.kids_age {float: left;width: 29%;margin: 0 5px 25px 5px;}#childrenBlock p {font-size: 18px;text-align: left;font-weight: 400;padding-bottom: 0;margin-top: 15px;}select.kids_number {margin-right: 5px;border: none;font-size: 16px;color: #555;height: 41px;padding-left: 10px;background: #fff;border-radius: 6px;width: 100%;}.payonline_price {background: #fff;text-align: center;font-size: 25px;padding: 10px 0;margin-bottom: 10px;}.payonline_price strong {color: #ad1818;font-size: 27px;}@media (min-width: 1200px) {h2, p { clear: none !important;}.topcontent {margin-top: 70px !important;}.all_width_content_1200, .list_content {width: 1140px !important;margin: 0 auto;}.updated_news {top: 66px;}.detailtopbanner {padding-top: 66px;}.tourleft {position: relative;float: left !important;margin-right: 20px !important;width: 50% !important;}#main_content_next { clear: both; background: #fff;}.zodiacsign { width: 15%;}ul.zodiacsignlist li, ul.ah_list li { width: 123px;}.infotopimage img { width: 750px !important; margin-top: 30px; border-radius: 6px;}.authorupdate { margin: -30px 0 40px 0;}.tournavi { top: 66px;width: 750px;position: sticky;border-bottom: 1px solid #d2d2d2;border-left: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;box-shadow: 0px 2px 6px #d2d2d2;background: #fff;z-index: 1;display: flex;margin-top: -35px; }.footerBtn button { width: 25%;}.infobottom {background: #fff !important;position: relative;color: #fff;clear: both;padding-bottom: 70px;padding-top: 120px;z-index: 999;top: -30px;margin-bottom: -30px;}.citytours, p.center, .citytours h3 {padding: 0;}.topcontent {margin-top: 40px;padding: 50px 0 0 0;width: 1140px;}.start-nav-item a {background: none !important;padding: 0 !important;font-size: 19px;}.infotailor {background: #f1f1f1;} .infotailor:after {content: ' ';position: absolute;left: calc(100% - 53%);border: 50px solid;border-color: #fff transparent transparent transparent;}.infotailorword {font-size: 30px;text-align: center;line-height: 35px;top: 0;position: absolute;right: 0;left: 0;color: #000;padding-top: 85px;}#main_content_pc {float: left; width: 1140px; }.bottomlogo {height: 71px !important;background-color: #1e1e1e;padding: 0;color: #fff;position: relative;background: #1e1e1e !important;padding-left: 0 !important;}.visible-xs {display: none !important;}.headerbar {height: 65px !important;background-color: #fff;position: fixed;width: 100%;box-shadow: 0px 2px 4px 0px #d1d1d1;z-index: 99999;}.searchtextbox {margin: 0;padding: 0;}.chinatourspc, .destinationspc, .travelguidepc, .culturepc {padding-top: 25px;background: #fff;height: 215px;box-shadow: 0px 2px 4px 0px #d1d1d1;}.siteSearch {float: left;margin-top: 14px;}.siteSearch .strkeys {border: 0;display: inline-block;width: 160px;color: #666;height: 35px;font-size: 15px;padding: 0 10px 0 0;margin-left: 0; }.siteSearch .strkeys:focus-visible {outline: none;}.siteSearch .submits {position: relative;top: 7px;width: 22px;}.topnavitailor {margin-top: 18px;margin-right: 10px;background: #ad1818;text-align: center;border-radius: 30px;text-transform: uppercase;float: left;height: 31px;}.topnavitailor a {color: #fff;border: none;display: inline-block;font-weight: 600;padding: 5px 10px;font-size: 17px;text-decoration: none;} }ul.list-reset {background: none;top: 15px;width: 1200px;position: absolute;padding-left: 150px;}ul.list-reset li.sub-nav-item {list-style: none;text-align: center;margin-bottom: 25px;}li.sub-nav-item a {color: #fff;font-size: 40px;font-weight: 700;width: 100%;display: block;}.footerbox {max-width: 100%;margin-right: auto;margin-left: auto;background: #3d3d3d;padding: 80px 15px;margin-bottom: -70px;}.newsletter_form {margin-bottom: 0; background: url(https://data.chinahighlights.com/image/forms/ch-bottom-newsletter-bg-beijing-great-wall.jpg) no-repeat; background-size: cover; text-shadow: 1px 1px 1px #000; color: #fff;}.newsletter_form input {width: 46%;float: left;height: 40px;border-radius: 4px;border: 1px solid #d1d1d1;font-size: 17px;padding: 0 10px;margin: 0 10px 30px 10px;}.newsletter_form button {background: #ad1818;color: #fff;margin-top: 30px;font-size: 20px;border-radius: 30px;border: none;padding: 6px 0;width: 40%;font-family: 'Goudy Old Style';font-weight: 600;margin: 0 auto;cursor: pointer;display: block;}img.chinahighlightslogo {padding-left: 0;height: 65px;width: 120px;}ul.pctopnavi {display: flex;padding-left: 10px;margin-bottom: 0;margin-top: 0;}ul.pctopnavi li {list-style: none;color: #fff;float: left;margin-right: 20px;font-size: 16px;}.pcnavibutton {float: right;position: relative;top: -67px;} li.dropdown{ text-transform: uppercase;}li.dropdown a {display: table-cell; padding: 23px 0; text-decoration: none;}li.dropdown a:hover {border-bottom: 5px solid #ad1818;padding: 21px 0 19px 0;}a.p_toplogo {float: left;}a.p_topnavilink { font-weight: 600;}@media (min-width: 751px) {.tournavi {top: 66px;width: 750px;position: sticky;border-bottom: 1px solid #d2d2d2;border-left: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;box-shadow: 0px 2px 6px #d2d2d2;background: #fff;z-index: 1;display: flex;margin-top: -35px;}.articlereco, .poparticle {width: auto ;}.all_width_content_1200 { padding: 0 15px; width: auto ;}.headerbar { height: 66px;}.updated_news { top: 66px; font-size: 17px;}.detailtopbanner { padding-top: 65px;}.list_content, #main_content_mobile { padding: 0 15px; width: auto ;}img.chinahighlightslogo {padding-left: 5px; float: left; width: auto ;}.wechat_button { width: 80px; bottom: 25px;}.topnavitailor { float: right;}.topcontent { margin-top: 0 !important;}.formerSubTitle {bottom: 240px; width: auto; left: 0; font-size: 40px !important; font-family: 'Goudy Old Style';}.siteSearch { margin-bottom: 30px;}input.strkeys {width: calc(100% - 70px);margin: 0 15px;height: 40px;font-size: 19px;padding: 0 15px;}input.submits {right: 15px;position: relative;float: right;top: -36px;width: 30px;}a.infocustomize {font-size: 21px;font-weight: 600;text-transform: uppercase;margin:10px 35px;position: relative;top: 15px;}img.navimenu {position: relative;right: 15px;top: 20px;}.detailtopbanner img, .infotopimage img { width: 100%;}.infobottom {background: #3d3d3d;color: #fff;margin-top: -5px;clear: both;padding: 50px 0;position: relative;}img.bottomlogocenter {display: block;margin: 0 auto;}.bottomlogoinfo {color: #fff;text-align: center;margin-bottom: 30px;font-size: 18px;padding: 0 25px;line-height: 23px;}.bottomlogoinfo a {color: #fff;}.bottomlogo {font-size: 16px;height: 56px;background: url(https://data.chinahighlights.com/pic/guide/info-template-bottom-logo.jpg) no-repeat 20px 0px #1e1e1e;color: #fff;padding-left: 160px;padding-top: 15px;position: relative;}.tourleft {float: none;margin-right: 0;width: 100%;margin-bottom: 20px;}}@media (max-width: 750px) {.infotailor:after {content: ' ';position: absolute;left: calc(100% - 60%);right: auto;top: 0px;bottom: auto;border: 40px solid;border-color: #fff transparent transparent transparent; }.infotailorword { top: calc(100% - 200px);font-size: 23px;line-height: 27px;}table.why_us_table { width: 1060px;}.bottom_why_us { height: 500px;}.bottom_why_us_content { padding: 0; height: auto;}.bottom_why_us_content h3 { padding-top: 25px;}.web_cookie { padding-bottom: 50px; width: 100%;}.wechat_button {bottom: 15px;right: 25px;width: calc(100% - 35px);height: 30px;z-index: 999999;}.wechat_button a { width: 100%;text-transform: capitalize;font-size: 18px;height: 27px;border-radius: 30px;padding-top: 8px;font-family: 'Goudy Old Style';box-shadow: 1px 1px 4px 2px #d1d1d1;}ul.infolist, ul.drop1, ul.ghlist { margin: 0 15px 0 30px; }.updated_news {top: 49px; padding: 7px 15px; width: calc(100% - 30px);line-height: 20px;}.infotopimage img { margin-bottom: 20px;}.articlenexttitle { background: #f6f6f6;}.bottom_destinations { display: inline-block;}.destination_links {width: 50%; float: left;}.bottom_destinations ul { padding: 0 20px;}.bottom_destinations ul li { margin-right: 0;}.newsletter_form { background: url(https://data.chinahighlights.com/image/forms/ch-bottom-newsletter-bg-beijing-great-wall-mobile.jpg) no-repeat; background-size: cover;}.newsletter_form input {width: 90%;}.newsletter_form button { width: 70%;}.destinations { padding: 0;}.all_width_content_1200, .list_content, .cruise_index_top_info { width: 100%;}.checkYes { width: auto; text-align: left;}.checkYes input {width: 20px !important; margin-right: 10px !important;}.tripnotes { padding-left: 15px;}.tourleftinfo { position: initial;border: 1px solid #cecece;padding: 20px;}.recotourname a, ul.expatstourtag li { color: #000;}ul.expatstourtag li { width: 100%; margin-bottom: 5px;}.tourbutton { display: block;margin: 10px auto; width: fit-content;}.tourbutton a { color: #ad1818; text-align: center;}.grouptours, .feedback_content_right, .destinations, .chinamap_travelguide, .poparticle { width: 100%;}.chinamap_travelguide { margin-top: 0;}.detailtopbanner {padding-top: 49px;}.beijingexperienceinfo {width: calc(100% - 20px);}.experience { margin-right: 0;}.experienceimg { flex-direction: column;}ul.catalog {padding: 0 15px;}.contactinfo { width: auto;font-size: 18px;border-right: none;float: none;margin-right: 0px;padding: 20px;line-height: 25px;}.contactcode { text-align: center;}.contactcode img {margin: 0 auto;display: block;margin-bottom: 15px;}.tourleft {float: none;margin-right: 0;width: auto;margin: 0 15px 30px 15px;}.righttour img { float: none; width: 100%;}.righttour {margin: 0 15px 30px 15px;display: block;height: auto;}.rightinfo {min-height: auto;padding: 20px 15px;display: block;width: auto;}.listtour, .traveler_story { display: block;}.expatstour {width: auto;height: auto;padding: 0;margin-right: 0;margin-bottom: 30px;}.InquiryButtonTour a { width: 80%;}ul.expatstourtag { display: inline-block;height: 100%;}.tourdetailinfo { height: auto; margin-bottom: 0; width: auto; display: block; padding-bottom: 10px;}.recotourname { font-size: 27px; line-height: 30px;}.articlenext { margin-left: 15px; margin-right: 0;}.tour_feedback {width: 280px;height: 290px;margin: 0 15px 0 0;} .expatstourname, .tourdetailinfo ul.infolist li { height: auto !important;} h1 {font-size: 33px;line-height: 33px;padding: 30px 15px 50px 15px;}h2 { font-size: 30px;}h3 { font-size: 25px; line-height: 27px;}h2, h3{ padding: 70px 15px 15px 15px;} p {padding: 0 15px 30px 15px; width: auto;} img.chinahighlightslogo {padding-left: 5px;position: relative;height: 47px;display: inline-block;width: 190px;}.infocategory { padding-left: 15px;}.topnavitailor {height: 29px;margin-top: 11px;display: flex;position: absolute;right: 0;}.siteSearch {margin-left: 15px;position: relative;width: calc(100% - 30px);margin-right: 15px;background: #fff;height: 40px;margin-bottom: 30px;}.siteSearch .strkeys {height: 39px;padding: 0 15px;font-size: 16px;width: calc(100% - 75px);border: none;}.siteSearch .submits {padding-top: 10px;width: 20px;position: absolute;right: 10px;}.topnavitailor .topnaviarrowdown {padding: 2px 7px;}.topnavibutton { height: 47px; display: flex;}.infoimage img { border-radius: 0;}.articlereco { width: auto;margin: 0;z-index: 999;background: #fff;position: relative;padding: 50px 0;}.recotitlebg h2 {padding: 0 0 15px 0;width: 100%;background: none;text-align: center;} .infotopimage {margin-top: 49px;}.tournavi {position: sticky;z-index: 11;box-shadow: 0 0 5px #9d9d9d;border-bottom: 1px solid #d9d9d9;margin: 0 auto;margin-top: -30px;background: #fff;top: 53px;width: 100%;display: flex;}.whatsnewinfo {display: inline-block; }.aniTab2, .aniTab5 {padding: 0 15px;}#imageField { width: 100%;}.aniTab2 input { width: 88%;margin-left: 0;margin-top: 5px;}.lovetitle {line-height: 65px;font-size: 40px;}label select {margin: 0 100px;margin-bottom: 15px;}.linepick {width: 33%;height: 290px;}#palmreading { padding: 10px;}.infobottom {background: #3d3d3d;color: #fff;clear: both;padding: 50px 0;position: relative;}img.bottomlogocenter {display: block; margin: 0 auto;}.bottomlogoinfo {color: #fff;text-align: center;margin-bottom: 30px;font-size: 18px;padding: 0 25px;line-height: 23px;}.bottomlogoinfo a { color: #fff; } .headerbar {position: fixed;width: 100%;top: 0;box-shadow: 1px 1px 6px 1px #f6f6f6;background: #fff;z-index: 99999;}.bottomlogo {font-size: 16px;height: 56px;background: url(https://data.chinahighlights.com/pic/guide/info-template-bottom-logo.jpg) no-repeat 20px 0px #1e1e1e;color: #fff;padding-left: 160px;padding-top: 15px;position: relative;}.hidden-xs {display: none !important}.visible-xs {display: block !important}.photoBlock300 {float: none;margin: 0 auto 30px auto;}.tourdaytitle {display: block;line-height: 25px;}.ch_readnext { padding: 0 15px;}.ch_readnext img {width: 100%;}.readnext_info {background: #f7f7f7;padding: 20px; display: inline-block;}.contactwechat {width: auto;padding: 0 20px;}.wechatinfo {padding: 0; line-height: 23px;}ul.nav-tabs li {border-bottom: 1px solid #d1d1d1;margin-bottom: 10px; border-radius: 0;padding: 8px 10px;}ul.nav-tabs { padding: 0 15px;display: inline-block;margin-bottom: -4px;height: 100%;}.RouteSearch, .DateSearch {margin-right: 0;display: flex;margin: 15px 0;width: 100%;}.Route, .Date { margin-right: 10px;}select.route { width: 90%; margin-top: -5px;}.FindCruise { background: none;}input.dateicon { width: 66%; margin-top: -5px;}.SearchButton { margin-top: 15px;}.cruise_top_info, .city_reco_tour { width: auto;}.cabin_info { padding: 15px 0 0 0;}.cabin_info img { float: none; margin-bottom: 20px;}.cruise_price {width: auto; display: block; clear: both;}table.cruise_highlights {width: 4000px;}.compatiblesearch {height: auto;}.cruise_index_top_info { width: auto;}.cruise_index_calendar {width: calc(100% - 30px);margin-bottom: 50px;}.homepage_confidence_content {display: block; padding-left: 15px;}.homepage_confidence { margin-bottom: 15px; } .confidence_content, .confidence_content_100 {width: auto; margin: 0 0 30px 0; height: auto; padding: 15px 0;}.confidence_bg { padding: 0 15px;}.confidence_tag { left: 30%;}.confidence_customer img.confidence_image { position: initial;}.confidence_content_half {width: auto;margin-right: 0;height: auto;padding: 15px 0;}.risk-free { width: calc(100% - 30px);padding: 50px 15px 0 15px;display: inline-block;margin: 70px 0 30px 0;}.content_name {display: flex;padding-top: 5px;}.traveler_story img { width: 100%; height: 100%;}.traveler_story_content {width: calc(100% - 30px); margin: 30px 15px 30px 15px;}.right_tour { display: none;}.rightdestination { height: auto;}.info_page_contact_us_word {padding: 0 15px;width: 65%;line-height: 20px;}.info_page_contact_us_word strong {font-size: 25px; margin-bottom: 10px;}.feedback_content img {padding-left: 15px; margin-bottom: 5px;}.feedback_content { padding: 30px 15px 20px 50px;}.optionLable {width: 47%;}.peopleSelect { width: 100%;}.kidNum, .number { height: 50px;}select.country_code {width: 100%; margin-bottom: 15px;}input.Inquiryphone { width: 96% !important;}.zodiacknowledge {padding: 0;}.travel_group {width: 16%;margin-right: 30px;}.selectionBlock {display: inline-block;}.age_range { margin-top: 0;}.info_ad_name { position: initial;}.info_ad_name strong {line-height: 22px;font-size: 22px;margin-bottom: 10px;}.info_ad img { border-radius: 0;}.info_ad_content {background: #f6f6f6; position: initial;}.info_ad_name a {color: #000;text-shadow: none;width: 75%;font-size: 18px;}}</style>
+    <!--@ADDON-CSS@-->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T75N4LL');</script>
+    <!-- End Google Tag Manager -->
+<style id='ezoicCSS'>.ezoic-ad{display:inline-block;border:0px;}.ezoic-ad>div>iframe{margin:0px!important;padding:0px!important;}
+.ezoic-floating-bottom { display: none!important; }</style><script type="text/javascript">var ezouid = "1";</script><base href="https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 411667;
+var ezdomain = 'chinahighlights.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_411667=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["1f926864-29b5-4a7c-7146-d54de0834ab3", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="chinahighlights_com",_audins_did=411667;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y0b-6y0d-23y17-4y1b-5y25-3y33-4y39-12y3a-6y58-2&cmbcb=163&sj=x04x02x06x07x0bx0dx17x1bx25x33x39x3ax58&abt=MinFloor', true, [], true, false, true, false);</script>
+<script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y1c-5&cmbcb=163&sj=x03x0cx1c&abt=MinFloor', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+
+<body><script>var ezAardvarkDetected;function ezDetectAardvark(){if(typeof __ez!=='undefined'&&typeof __ez.bit!=='undefined'){var bait=document.createElement("div");bait.className="textads banner-ads banner_ads ad-unit ad-zone ad-space adsbox";bait.style.height="1px";document.body.appendChild(bait);var baitOffsetHeight=bait.offsetHeight;if(typeof window["_ezaq"]!=="undefined"){if(baitOffsetHeight){ezAardvarkDetected=false;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',false))]);}
+else{ezAardvarkDetected=true;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',true))]);}
+var observer=new MutationObserver(function(e){if(e[0].removedNodes){ezAardvarkDetected=true;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',true))]);}});}
+if(typeof observer!=='undefined'){observer.observe(bait,{childList:true,attributes:true});}}}
+window.addEventListener('load',ezDetectAardvark);</script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T75N4LL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--PC头部导航-->
+    <header class="headerbar" id="header">
+        <nav>
+            <a href="/" class="p_toplogo"> <img src="https://data.chinahighlights.com/pic/logo/china-highlights-top-navigation-logo.png" width="154" height="83" alt="chinahighlights logo" class="chinahighlightslogo img-responsive"/></a>
+            <ul class="pctopnavi">
+                <li class="dropdown"><a href="/tour/" class="p_topnavilink" id="china_tours_2021">China Tours</a>
+                    <div class="chinatourspc dropdown-content">
+                        <ul class="list-reset sidebar">
+                            <li class="start-nav-item"><a href="/tour/year.htm" id="tours_year_2021">China Tours
+                                    2023/2024</a></li>
+                            <li class="start-nav-item"><a href="/tour/expats-tours.htm" id="china_expats_tours_2021">China Expats Tours</a></li>
+                            <li class="start-nav-item"><a href="/tour/winter-vacation/" id="china_winter_tours_2021">China Winter Tours</a></li>
+                            <li class="start-nav-item"><a href="/tour/top-china-tours/" id="china_top_tours_2021">Top 10
+                                    Tours</a></li>
+                            <li class="start-nav-item"><a href="/tour/china-panda-tours/" id="china_panda_tours_2021">Panda Tours</a></li>
+                            <li class="start-nav-item"><a href="/greatwall/hiking.htm" id="china_great_wall_hiking_tours_2021">Great Wall Hiking</a></li>
+                            <li class="start-nav-item"><a href="/tour/silk-road-tours/" id="china_silk_road_tours_2021">Silk Road Tours</a></li>
+                            <li class="start-nav-item"><a href="/tour/family-tours/" id="china_family_tours_2021">Family
+                                    Tours</a></li>
+                            <li class="start-nav-item"><a href="/yangtzecruise/" id="china_yangtze_cruise_2021">Yangtze
+                                    River Cruise</a></li>
+                            <li class="start-nav-item"><a href="/tour/china-hiking-tours/" id="china_hiking_tours_2021">Hiking Tours</a></li>
+                            <li class="start-nav-item start-nav-item-last"><a href="/greatwall/tours/" id="china_great_wall_tours_2021">Great Wall of China Tours</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="/citytour/" class="p_topnavilink" id="china_destinations_2021">Destinations</a>
+                    <div class="destinationspc dropdown-content">
+                        <ul class="list-reset  sidebar">
+                            <li class="start-nav-item"><a href="/beijing/tours.htm" id="beijing_tours_2021">Beijing</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/tibet/tours.htm" id="tibet_tours_2021">Tibet</a></li>
+                            <li class="start-nav-item"><a href="/xinjiang/tours/" id="xinjiang_tours_2021">Xinjiang</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/xian/tours.htm" id="xian_tours_2021">Xi&#39;an</a></li>
+                            <li class="start-nav-item"><a href="/zhangjiajie/tours.htm" id="zhangjiajie_tours_2021">Zhangjiajie</a></li>
+                            <li class="start-nav-item"><a href="/inner-mongolia/tours/" id="inner_mongolia_tours_2021">Inner Mongolia</a></li>
+                            <li class="start-nav-item"><a href="/shanghai/tours.htm" id="shanghai_tours_2021">Shanghai</a></li>
+                            <li class="start-nav-item"><a href="/huangshan/tours.htm" id="huangshan_tours_2021">Huangshan</a></li>
+                            <li class="start-nav-item"><a href="/guizhou/tours.htm" id="guizhou_tours_2021">Guizhou</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/guilin/tours.htm" id="guilin_tours_2021">Guilin</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/xiamen/tours.htm" id="xiamen_tours_2021">Xiamen</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/harbin/tours.htm" id="harbin_tours_2021">Harbin</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/chengdu/tours.htm" id="chengdu_tours_2021">Chengdu</a>
+                            </li>
+                            <li class="start-nav-item"><a href="/yunnan/tours.htm" id="yunnan_tours_2021">Yunnan</a>
+                            </li>
+                            <li class="start-nav-item start-nav-item-last"><a href="/hong-kong/tours.htm" id="hk_tours_2021">Hong Kong</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="/travelguide/" class="p_topnavilink" id="travel_guide_2021">Travel
+                    Guide</a>
+                <div class="travelguidepc dropdown-content">
+                    <div class="listtour" style="width:1200px; padding-left: 150px;">
+                        <div class="guide_block">
+                            <div class="navisgation_title_pc">Itinerary Ideas</div>
+
+                            <div class="listtour">
+                            <ul class="guide_links">
+
+                                <li class="start-nav-item"><a href="/travelguide/5-days-china-itinerary.htm" id="Itinerary_5_days">5 Days</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/one-week-china-itinerary.htm" id="Itinerary_one_week">One Week</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/8-day-china-itinerary.htm" id="Itinerary_8_days">8 Days</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/10-days-china-itinerary.htm" id="Itinerary_10_days">10 Days</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/12-days-china-itinerary.htm" id="Itinerary_12_days">12 Days</a></li>
+                            </ul>
+                            <ul class="guide_links">
+                                <li class="start-nav-item"><a href="/travelguide/2-weeks-china-itinerary.htm" id="Itinerary_2_weeks">2 Weeks</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/17-days-china-itinerary.htm" id="Itinerary_17_days">17 Days</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/19-days-china-itinerary.htm" id="Itinerary_19_days">19 Days</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/3-weeks-china-itinerary.htm" id="Itinerary_3_weeks">3 Weeks</a></li>
+                                <li class="start-nav-item"><a href="/travelguide/4-week-china-itinerary.htm" id="Itinerary_4_weeks">4 Weeks</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="guide_block">
+                            <div class="navisgation_title_pc">Plan a Trip</div>
+                            <div class="listtour">
+                            <ul class="guide_links">
+<li class="start-nav-item"><a href="/travelguide/plan-first-trip.htm" id="plan_first_trip">First Trip</a></li>
+<li class="start-nav-item"><a href="/travelguide/family-trip-plan.htm" id="plan_family_trip">Family Trip</a></li>
+<li class="start-nav-item"><a href="/travelguide/summer-trip-planner.htm" id="plan_summer_trip">Summer Trip</a></li>
+<li class="start-nav-item"><a href="/travelguide/winter-travel-guide/" id="plan_winter_trip">Winter Trip</a></li>
+</ul>
+<ul class="guide_links">
+<li class="start-nav-item"><a href="/shanghai/shanghai-hangzhou-suzhou-trip-planner.htm" id="plan_shanghai_hangzhou_suzhou">Shanghai, Hangzhou, Suzhou</a></li>
+<li class="start-nav-item"><a href="/shanghai/shanghai-to-greatwall.htm" id="plan_shanghai_great_wall">Shanghai to the Great Wall</a></li>
+<li class="start-nav-item"><a href="https://www.asiahighlights.com/asia/plan-a-trip-to-china-and-japan" target="_blank" id="plan_china_japan">China and Japan</a></li>
+                            </ul>
+                        </div> </div>
+                        <div class="guide_block">
+                            <div class="navisgation_title_pc">Guide by Month</div>
+                            <div class="listtour">
+                            <ul class="guide_links">
+<li class="start-nav-item"><a href="/travelguide/article-january-trip.htm" id="month_january">January</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-february-trip.htm" id="month_february">February</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-march-trip.htm" id="month_march">March</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-april-trip.htm" id="month_april">April</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-may-trip.htm" id="month_may">May</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-june-trip.htm" id="month_june">June</a></li>
+                            </ul>
+                            <ul class="guide_links">
+<li class="start-nav-item"><a href="/travelguide/article-july-trip.htm" id="month_july">July</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-august-trip.htm" id="month_august">August</a></li>
+<li class="start-nav-item"><a href="/travelguide/article/september-trip.htm" id="month_september">September</a></li>
+<li class="start-nav-item"><a href="/travelguide/article/october-trip.htm" id="month_october">October</a></li>
+<li class="start-nav-item"><a href="/travelguide/article-november-trip.htm" id="month_november">November</a></li>
+<li class="start-nav-item"><a href="/travelguide/article/december-trip.htm" id="month_december">December</a></li>                             
+                            </ul>
+                        </div> </div>
+                    </div>
+                </div>
+            </li>
+                <li class="dropdown"><a href="/travelguide/culture/" class="p_topnavilink" id="culture_2021">Culture</a>
+                    <div class="culturepc dropdown-content">
+                        <ul class="list-reset  sidebar">
+                            <li class="start-nav-item"><a href="/festivals/" id="culture_festivals">Chinese
+                                    Festivals</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/chinese-food/" id="culture_food">Chinese
+                                    Food</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/chinese-zodiac/" id="culture_zodiac">Chinese Zodiac</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/chinese-tea/" id="culture_tea">Chinese
+                                    Tea</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/culture/china-arts-crafts.htm" id="culture_arts">Chinese Arts</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/nationality/" id="culture_ethnic_group">Chinese Ethnic Group</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/culture/chinese-literature.htm" id="culture_literature">Chinese Literature</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/architecture/" id="culture_architecture">Chinese Architecture</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/culture/traditionalmedichine.htm" id="culture_medicine">Chinese Medicine</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/religion.htm" id="culture_religious">Chinese Religions</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/chinese-language/" id="culture_language">Chinese Language</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/culture/china-history.htm" id="culture_history">China History</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/traditional-chinese-clothes.htm" id="culture_clothes">Chinese Clothes</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/kungfu/" id="culture_kungfu">Chinese Kung
+                                    Fu</a></li>
+                            <li class="start-nav-item"><a href="/zodiac-signs/" id="culture_zodiac_signs">Zodiac
+                                    Signs</a></li>
+                            <li class="start-nav-item"><a href="/travelguide/culture/dream-meanings.htm" id="culture_dream_meanings">Dream Meanings</a></li>
+                            <li class="start-nav-item start-nav-item-last"><a href="/palm-reading/" id="culture_palm_reading">Palm Reading</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="/china-trains/" class="p_topnavilink">Trains</a>
+                    <div class="travelguidepc dropdown-content">
+                        <ul class="list-reset  sidebar">
+                            <li class="start-nav-item"><a href="/china-trains/china-railway-station.htm">Train Stations
+                                    and
+                                    Schedules</a></li>
+                            <li class="start-nav-item"><a href="/china-trains/train-travel.htm">Train Travel</a></li>
+                            <li class="start-nav-item"><a href="/china-flights/">Flight</a></li>
+                            <li class="start-nav-item start-nav-item-last"><a href="/china-trains/china-train-app-download.htm">Train App
+                                    Download</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="/tour/asia-tours/" class="p_topnavilink">Asia Tours</a>
+                    <div class="destinationspc dropdown-content">
+                        <ul class="list-reset  sidebar">
+                            <li class="start-nav-item"><a href="https://www.asiahighlights.com/asia/tours/japan-china-discovery" target="_blank">China-Japan</a></li>
+                            <li class="start-nav-item"><a href="https://www.asiahighlights.com/asia/tours/china-and-vietnam" target="_blank">China-Vietnam</a></li>
+                            <li class="start-nav-item"><a href="https://www.asiahighlights.com/asia/tours/mongolia-china-and-thailand" target="_blank">China-Mongolia-Thailand</a></li>
+
+                            <li class="start-nav-item"><a href="https://www.asiahighlights.com/asia/tours/china-nepal-and-india" target="_blank">China-Nepal-India</a></li>
+                            <li class="start-nav-item"><a href="/tour/cht-th-04/">China-Thailand</a></li>
+                            <li class="start-nav-item" style="width:100%;"><a href="https://www.asiahighlights.com/caucasus-central-asia/tours/kyrgyzstan-uzbekistan-turkmenistan" target="_blank">China-Kyrgyzstan-Uzbekistan-Turkmenistan</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="/day-tours/" class="p_topnavilink">Day Tours</a>
+                    <div class="destinationspc dropdown-content">
+                        <ul class="list-reset  sidebar">
+                            <li class="start-nav-item"><a href="/day-tours/beijing/">Beijing</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/shanghai/">Shanghai</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/xian/">Xi&#39;an</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/chengdu/">Chengdu</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/guilin/">Guilin</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/zhangjiajie/">Zhangjiajie</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/huangshan/">Huangshan</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/yunnan/">Yunnan</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/great-wall-hiking/">Great Wall Tours</a></li>
+                            <li class="start-nav-item"><a href="/day-tours/china-food-tours/">Food Tours</a></li>
+                            <li class="start-nav-item start-nav-item-last"><a href="/day-tours/activities/">Fun
+                                    Activities</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="topnavitailor">
+                    <a href="/contactus/" id="contact_us_2021">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="pcnavibutton">
+
+            <div class="siteSearch">
+                <form class="searchtextbox" id="searchbox_001281624266240652297:cl1fy1cxepi" name="googlesreach" action="https://www.chinahighlights.com/search-result/">
+                    <input type="hidden" value="001281624266240652297:cl1fy1cxepi" name="cx"/>
+                    <input type="hidden" value="FORID:9" name="cof"/>
+                    <input type="text" onfocus="this.value = &#39;&#39;" class="strkeys" placeholder="Search China Highlights" name="q"/>
+                    <input type="image" class="submits" src="https://data.chinahighlights.com/pic/pc-top-navigation-web-search-bg.png" width="25px"/>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="updated_news">
+        <div class="list_content">Top 10 China tours 2023/2024 for first visits and returns: embark on a lifetime
+            experience. <a href="/tour/top-china-tours/" id="updated_news_new_year_2022_pc">Learn
+                more</a></div>
+    </div>
+    <!--@TOP-BANNER@-->
+    <!--@TOP-VIDEO@-->
+    <div class="main_content">
+        
+<div class="topcontent">
+    <section>
+        <div class="infotopimage">
+        <img src="https://images.chinahighlights.com/allpicture/2021/12/71879439c9ef4d0da835efb6_cut_750x400_39.jpg" alt="The 15 Most Popular Chinese Dishes, Tasty Chinese Food" class="img-responsive" width="750" height="399"/>
+    </div>
+    <div class="infocategory">
+        <a href="/" data-count="2">Home</a>
+                    <a href="/travelguide/culture/" data-index="0" data-is-id="278008010">Chinese Culture</a>
+                    <a href="/travelguide/chinese-food/" data-index="1" data-is-id="278008017">Chinese Food</a>
+            </div>
+    <h1>The 15 Most Popular Chinese Dishes, Tasty Chinese Food</h1>
+    <!--<p class="subheadline">to do</p> -->
+    <div class="authorupdate">Written by <strong>Mike Ho</strong>Updated Jan. 20, 2022</div>
+        <style>
+    #adsense-head-ads {
+        height: 427px;
+        min-height: 427px;
+        background: url(https://data.viaggio-in-cina.it/information-view/information/img/adsense.gif) center center no-repeat;
+    }
+    @media screen and (max-width: 767px) {
+        #adsense-head-ads {
+            height: 320px;
+            min-height: 320px;
+        }
+    }
+    </style>
+    
+    <span id="ezoic-pub-ad-placeholder-102"></span>
+    </section>
+</div>
+
+        <div id="main_content_pc">
+            <div class="pc_content">
+                <article>
+                    <!--@TRAIN-SEARCH@-->
+                    <p>With a long history, unique features, numerous styles, and exquisite cooking, Chinese cuisine is one of the important constituent parts of Chinese culture. Chinese traditional dishes are famous for their color, aroma, taste, meanings, and appearance.</p>
+
+<p>As China is a huge country, there are many regional differences in cuisine due to differing climates, history, local ingredients, dining customs, etc.</p>
+
+<p>According to the cooking styles and regional flavors, Chinese cuisines can be divided into <a href="/travelguide/chinese-food/eight-cuisine.htm">eight Chinse cuisines</a>, which include Sichuan Cuisine, Hunan Cuisine, Shandong Cuisine, Zhejiang Cuisine, Fujian Cuisine, Anhui Cuisine, Cantonese Cuisine, and Jiangsu Cuisine. Each cuisine has its popular dishes.</p>
+
+<h2>1. Peking Roasted Duck</h2>
+
+<div><img alt="Beijing Roasted Duck" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/12/d247e7d25b164b77841f6022_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle"></span><span class="infoimagetitle">Beijing Roasted Duck</span></div>
+
+<p>Peking duck (北京烤鸭 Běijīng kǎoyā) is a famous dish from <a href="/beijing/">Beijing</a>, enjoying world fame, and considered as one of China national dishes. Peking duck is savored for its thin and crispy skin. Sliced Peking duck is often eaten with pancakes, sweet bean sauce, or soy sauce with mashed garlic. It is a must-taste dish in Beijing!</p>
+
+<p>As “the first dish to taste in China”, <a href="/beijing/food/beijing-duck.htm">Beijing Roast Duck</a> used to be a royal dish in medieval China. It has been a “national dish of diplomacy” since the 1970s, when it was first used for the reception of foreign guests by Premier Zhou Enlai (the first Premier of the People&#39;s Republic of China). It is highly praised by heads of state, government officials, and domestic and foreign tourists.</p>
+
+<h2>2. Kung Pao Chicken</h2>
+
+<div><img alt="Kung Pao Chicken" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/31acb7b302ec4b48b17443ed_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Kung Pao Chicken</span></div>
+
+<p>Kung Pao Chicken (宫保鸡丁 gōngbào jīdīng) is a famous Sichuan-style specialty, popular with both Chinese and foreigners. The major ingredients are diced chicken, dried chili, cucumber, and fried peanuts (or cashews).</p>
+
+<p>People (Chinese takeaways) in Western countries have created a Western-style kung pao chicken, for which the diced chicken is covered with cornstarch, and vegetables, sweet and sour sauce, and mashed garlic are added. See <a href="/travelguide/chinese-food/cooking/kung-pao-chicken.htm">How to Cook Kung Pao Chicken</a> for a classic recipe and its history.</p>
+
+<h2>3. Sweet and Sour Pork</h2>
+
+<div><img alt="Sweet and Sour Pork" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/a4ad4a7fe0cb401cb0be6383_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Sweet and Sour Pork</span></div>
+
+<p>Sweet and sour pork (糖醋里脊 tángcù lǐjǐ) has a bright orange-red color, and a delicious sweet and sour taste. At the very beginning there was only sweet and sour pork, but to meet demands, there have been some developments on this dish. Now, the pork can be substituted with other ingredients like chicken, beef, or pork ribs.</p>
+
+<h2>4. Hot Pot</h2>
+
+<div><img alt="Hot Pot" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/01/482fb1f829ce4e6496b94fea_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Hot Pot</span></div>
+
+<p>Hot pot, or <a href="/travelguide/chinese-food/hotpot.htm">hotpot </a>(火锅 huǒguō), is one of the most popular dishes in China, especially in Sichuan Province or <a href="/chongqing/">Chongqing</a>. People cook in and eat from a simmering pot of soup stock (broth) on a gas/induction hob in the middle of the dining table with foodstuffs and condiments around the pot. People can add and cook whatever they like in the broth. The secret of whether a hot pot is good or not lies in the broth, which all the meat slices and vegetables take their flavor from.</p>
+
+<p>Chinese people are very fond of hot pot. In the past hot pot used to be favored only in winter, but nowadays hot pot has been appearing on tables all year round. It is a great way to socialize with friends and relatives. People gather around the pot to eat while chatting, eating, drinking, and having fun.</p>
+
+<h2>5. Dim Sum</h2>
+
+<div class="infoimage"><img alt="Dim Sum" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2018/08/16d96371fd2944be86ffbdc1_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Cantonese Dim Sum</span></div>
+
+<p>Dim sum (点心 diǎnxin) is one of the most popular <a href="/travelguide/chinese-food/yue-cuisine.htm">Cantonese cuisine</a> dishes. It contains a large range of small dishes, including dumplings, rolls, cakes, and meat, seafood, dessert, and vegetable preparations. There are more than one thousand dim sum dishes in existence today.</p>
+
+<p>Dim sum originated in Guangzhou city. People of <a href="/guangdong/">Guangdong </a>are fond of drinking tea in the morning or lunch. So, they often eat dim sum during their tea parties for breakfast and lunch. It is a popular way to get together with friends and relatives or have social gatherings. Read more about <a href="/hong-kong/restaurants/dim-sum-restaurants.htm">Dim sum</a>.</p>
+
+<h2>6. Dumplings</h2>
+
+<div><img alt="Dumplings" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/01/9b7159f6d89449d997eaa5ab_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Dumplings</span></div>
+
+<p>Dumplings (饺子 jiǎozi) are a traditional food type that is widely popular, especially in North China. Chinese dumplings consist of minced meat and/or chopped vegetables wrapped in a thin dough skin. Popular fillings are minced pork, diced shrimp, ground chicken, beef, and vegetables. Dumplings can be cooked by boiling, steaming, or frying.</p>
+
+<p>Dumplings are also a traditional dish eaten on Chinese New Year’s Eve. As they look like Chinese silver ingots (Chinese money in old times), it is believed that the more dumplings you eat during the New Year celebrations, the more money you will make in the New Year. Making dumplings is a good way to interact with your friends and relatives. You will see a busy kitchens with Chinese families making dumplings during <a href="/travelguide/special-report/chinese-new-year/">Chinese New Year</a>. Read more abou <a href="/travelguide/chinese-food/chinese-dumplings.htm">Dumplings</a>.</p>
+
+<h2>7. Ma Po Tofu</h2>
+
+<div><img alt="Ma Po Tofu" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/62745d5a726045e4a99a3885_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Ma Po Tofu</span></div>
+
+<p>Ma Po tofu (麻婆豆腐 Mápó dòufǔ ‘Pockmarked Granny beancurd’) is one of the most famous dishes in Chuan Cuisine (Sichuan food) with a history of more than 100 years. It consists of beancurd along with some minced meat (pork or beef) in a spicy sauce. The sauce is made from fermented black beans and chili paste (douban/douchi).</p>
+
+<p>The inventor of Ma Po tofu was from <a href="/chengdu/">Chengdu</a>, <a href="/sichuan/">Sichuan province</a>. She was a grandma whose surname was Chen. It is said that Chen’s face was very pockmarked. In Chinese, ma means ‘pockmarked’ and &#39;po’ means grandma, and so people called the dish she made Ma Po (&#39;Pockmarked Granny’) tofu. Her spicy and fragrant dish later became a highly popular item. It was introduced to Japan and also became a popular dish there. Read more about <a href="/travelguide/chinese-food/cooking/mapo-tofu.htm">how to cook Ma Po Tofu</a>.</p>
+
+<h2>8. Char Siu</h2>
+
+<div class="infoimage"><img alt="Char Siu" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/12/a57fdce570494d41b624119d_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Cantonese Char Siu</span></div>
+
+<p>In Cantonese, char means ‘fork’ and siu means ‘to roast’, so char sui (叉烧 chāshāo) means “fork roasted”. It is a kind of Cantonese roast pork. It is eaten with rice or noodles. It is also used as a filling in baozi (a kind of steamed stuffed bun).</p>
+
+<h2>9. Chow Mein</h2>
+
+<div><img alt="Chow Mein" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2018/03/10725167158a4b8589bf3140_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Chow Mein</span></div>
+
+<p>Chow mein is the Cantonese pronunciation of the Mandarin chǎomiàn (炒面), which means ‘stir-fried noodles’. This stir-fried dish consists of noodles, meat (usually chicken, beef, shrimp, or pork), onions, and celery.</p>
+
+<p>For making chow mein, the noodles need to be cooked in boiling water for a while. After they cool comes the step of stir-frying.</p>
+
+<p>There is an interesting story about the origin of chow mein. It is said that chow mein was invented by a woman called Shan Gu in Jiangsu Province. She was making food for workers who were building a great dam to prevent flooding of the Yellow River. She found that food went bad easily and fast in the hot weather. So, she invented chow mein, which can be kept for a longer time and is easily reheated and eaten. Since then, stir-frying has become a popular way of cooking noodles.</p>
+
+<h2>10. Fried Rice</h2>
+
+<div><img alt="Fried Rice" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2014/09/2b424254939d4d51adda30fe_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Yangzhou Fried Rice</span></div>
+
+<p>Fried rice (炒饭 chǎofàn) is a dish made from fried cooked rice and other ingredients, often including eggs, vegetables, seafood, or meat. Fried rice is one of the most common Chinese foods. It is easy to make fried rice at home using leftover rice and other meat or vegetables from the last meal.</p>
+
+<p>It was said that an important diplomatic official in the late Qing Dynasty (1644–1912), Li Hongzhang, ordered his chef to cook a dish that both Chinese people and foreigners would like. The chef made fried rice, which was enjoyed by both the foreign guests and officials.</p>
+
+<p>The most famous fried rice in China is Yangzhou fried rice. Typical <a href="/travelguide/chinese-food/cooking/yangzhou-fried-rice.htm">Yangzhou fried rice</a> ingredients include shrimp, eggs, and barbecued pork.</p>
+
+<h2>11. Twice-Cooked Pork Slices</h2>
+
+<div>
+<div class="infoimage"><img alt="Twice-Cooked Pork Slices" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/12/8189b6d0265149138f394b89_cut_750x400_39.jpg"/><span class="infoimagetitle">Twice-Cooked Pork Slices</span></div>
+</div>
+
+<p>Twice-cooked pork or double-cooked pork (回锅肉 huíguōròu) is one of the most famous Sichuan pork dishes. Its Chinese name is huiguorou, which means ‘returned-to-the-pot meat’. Pork is boiled in the pot first. Then it is cooked again with other ingredients, including broad bean paste (doubanjiang), fermented black soybeans (douchi), garlic, ginger, and so on.</p>
+
+<p>It was said that the dish was created by a Chinese poet called Su Dongpo (a.k.a. Su Shi) in the <a href="/travelguide/china-history/the-song-dynasty.htm">Song Dynasty</a> era (960–1279).</p>
+
+<p>Su made a delicious pork dish for his friends one day. He was boiling pork in a pot and walked out of the house and forgot about it. After he returned, he found the simmering pork had turned very soft. He tasted the pork sizzling in its fat and found the pork had become softer and more delicious than with his previous boiling method. So, he returned it to the pot with the other ingredients and impressed his friends with it.</p>
+
+<p>Due to its origin story and its taste, ‘twice-cooked pork’ has become very popular.</p>
+
+<h2>12. Sichuan Pork</h2>
+
+<div><img alt="Sichuan Pork" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/7b3afb974d7946bbbe397f7c_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Sichuan Pork</span></div>
+
+<p>Sichuan pork, or ‘poached pork slices’ (水煮肉片 shuǐzhǔ ròupiàn), is a famous <a href="/travelguide/chinese-food/chuan-cuisine.htm">Sichuan cuisine</a> dish. Pork, with a coating made from egg-white and starch to preserve its freshness and tenderness, is boiled in broth. The meaty broth is typical Sichuan cuisine, featuring a peppery and spicy taste. When eating, you’ll find each piece of meat contains abundant juices with a fresh and fragrant spicy aroma.</p>
+
+<p>Poached beef slices is a popular version of this dish that we have a recipe for.</p>
+
+<h2>13. Xiaolongbao</h2>
+
+<div class="infoimage"><img alt="Xiaolongbao" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/12/e0f37497683b4935b7841043_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Shanghai Xiaolongbao</span></div>
+
+<p>Xiǎolóngbāo (小笼包 ‘small basket buns’) are a kind of baozi (Chinese steamed bun). They are popular in Jiangsu and Shanghai. Xiaolongbao are traditionally cooked in a small bamboo basket, which gives them their name. The most common xiaolongbao filling is pork. Other ingredients can include beef, crab meat, shrimp, seafood, and vegetable fillings.</p>
+
+<p>There is a special way to eat the broth-filled Shanghai steamed-pork xiaolongbao (Shanghai soup buns): you can nibble off a small corner of dough and suck out the delicious soup. Or you can use a straw to suck the soup then eat the fillings and dough.</p>
+
+<h2>14. Zhajiangmian</h2>
+
+<div class="infoimage"><img alt="Zhajiangmian" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/12/44ca76c8361e41caa43d8859_cut_750x400_39.jpg"/><span class="infoimagetitle">Zhajiangmian</span></div>
+
+<p>Zhajiangmian (炸酱面 /jaa-jyang-myen/ ‘fried sauce noodles’) is one of the most popular Shandong Cuisine dishes. It is a thick wheat noodle dish topped with zhajiang sauce. The sauce is made by simmering pork or beef with salty fermented soybean paste. In Chinese, zhajiang means ‘fried sauce’, while mian means ‘noodles’. It is also a well-known small meal or <a href="/beijing/food/beijing-street-snacks.htm">snack in Beijing</a>.</p>
+
+<p>Originating in Shandong, zhajiangmian was introduced to Beijing by <a href="/travelguide/china-history/the-qing-dynasty.htm">Qing Dynasty</a> Emperor Guangxu (r. 1871–1908) and Empress Dowager Cixi during a trip from Beijing to Xi’an. They went into a restaurant and ordered a bowl of zhajiangmian. Both found it so tasty that they had to eat another bowl. Then, Empress Dowager Cixi brought the chef who made the ‘fried sauce noodles’ to the palace in Beijing. From then on, zhajiangmian became more and more popular in Beijing and around China.</p>
+
+<h2>15. Wonton Soup</h2>
+
+<div><img alt="Wonton Soup" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2017/07/241e8e1b02ef463bafa65702_cut_750x400_39.jpg"/><span class="infoimagetitle"></span><span class="infoimagetitle">Wonton Soup</span></div>
+
+<p>Wontons (馄炖 húndùn) are a kind of Chinese dumpling. Different from jiaozi, wontons have less filling and are wrapped in much thinner dough wrappers. The shapes of wontons can be different depending on how they’re made. Some of them look like silver ingots, making them an auspicious ‘wealth-invoking’ dish.</p>
+
+<p>Wonton fillings are most often minced pork or diced shrimp. Wontons are commonly boiled and served in a soup (broth), but sometimes deep-fried.</p>
+
+<h2>Authentic Chinese Food Tours for Gourmets</h2>
+
+<div><img alt="China Food tour" class="img-responsive" height="400" src="https://data.chinahighlights.com/grey.gif" width="750" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2016/09/d29a8e4095e541be82abc26a_cut_750x400_39.jpg"/><span class="infoimagetitle"></span></div>
+
+<p>Unlike some tours that serve the same food menu all through a China trip, <a href="/tour/">our private tours</a> allow you to try different local dishes at each place. Our local guides know which restaurants are favored by locals and are willing to arrange them into your itinerary. See our recommended tours below for inspiration.</p>
+
+<ul class="infolist">
+	<li><a href="/tour/cht-1/" rel="nofollow">8-Day Beijing, Xi&#39;an, and Shanghai Tour</a>—<b>The Golden Triangle</b></li>
+	<li><a href="/tour/cht-fd-01/" rel="nofollow">12-Day Beijing, Xi&#39;an, Chengdu, Guilin, and Hong Kong Cuisine Tour</a>—<b> A Broad Taste of China</b></li>
+</ul>
+
+<p>If you are not interested in the above tours, just tell us your interests and requirements, and we will <a href="/contactus/" rel="nofollow">create a China tour</a> for you.</p>
+<!--PC-->
+
+<p class="hidden-xs"><a href="/contactus/"><img alt="Contact us for Updated China Travel Information" class="img-responsive" src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://data.chinahighlights.com/image/tour-detail/china-tour/contact-us-updated-travel-information-pc-2.jpg" width="896" height="280"/> </a></p>
+<!--MOBILE-->
+
+<p class="visible-xs"><a href="/contactus/"><img alt="Contact us for Updated China Travel Information" class="img-responsive" src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://data.chinahighlights.com/image/tour-detail/china-tour/contact-us-updated-travel-information-amp-2.jpg" width="600" height="750"/> </a></p>
+
+                </article>
+                <div class="wechat_button"><a href="/tour/create-my-trip.htm" id="create_my_trip_button_pc">Create my trip</a></div>
+            </div>
+            <div class="right_brand_info"><aside><div class="right_brand_info">
+<aside>
+<div class="risk-free" style="width: 100%;padding: 0;margin: 70px 0 0 0;background: #f6f6f6;">
+<h3 style="padding: 25px 0;    text-align: center;    font-size: 23px;    line-height: 25px;    border-top: 5px solid #ad1818;">Why Travel with China Highlights (98.8% positive customer reviews among 10,000+)</h3>
+
+<ul class="infolist" style=" margin-bottom: 20px;">
+	<li class="tailormade" style="list-style:none;"><strong style="    color: #ad1818;    font-family: &#39;Goudy Old Style&#39;;    font-size: 20px;    display: block;    line-height: 20px;    margin-bottom: 5px;">Unique experiences tailored to your interests:</strong> Enjoy a premium trip that goes beyond the typical tourist attractions.</li>
+	<li class="worryfree" style="list-style:none;"><strong style="    color: #ad1818;    font-family: &#39;Goudy Old Style&#39;;    font-size: 20px;    display: block;    line-height: 20px;    margin-bottom: 5px;">Hassle-free travel and peace of mind: </strong>Every aspect of your trip will be carefully planned and organized by your 1:1 travel consultant.</li>
+	<li class="norisk" style="list-style:none;"><strong style="    color: #ad1818;    font-family: &#39;Goudy Old Style&#39;;    font-size: 20px;    display: block;    line-height: 20px;    margin-bottom: 5px;">Experienced and knowledgeable guides:</strong> Your guides will be local and love to work for travelers&#39; smiles.</li>
+</ul>
+</div>
+</aside>
+</div>
+</aside></div>
+            <div class="right_tour"><div class="expatstour" style="margin: 30px 0; width:auto;">
+<div class="tour_img_title"><a href="/travelguide/china-travel-reopen-restrictions.htm" rel="nofollow"><img alt="China Travel Restrictions &amp; Travel Advisory" class="img-responsive" height="415" src="https://images.chinahighlights.com/allpicture/2017/09/b2d0a90b884447a7a1b89ebc_cut_800x500_349.jpg" width="600"/><span class="citytourname"></span></a></div>
+
+<div class="tourdetailinfo"><span class="expatstourname"><a href="/travelguide/china-travel-reopen-restrictions.htm">China Travel Restrictions &amp; Travel Advisory</a></span>
+
+<div class="tourbutton"><a href="/travelguide/china-travel-reopen-restrictions.htm" rel="nofollow">View More<i aria-hidden="true" class="fa fa-caret-right"></i></a></div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+    <!--PC底部-->
+    <div class="infobottom">
+        <div id="main_content_next">
+            <section>
+                <!--@Match-Content-GOOGLE###ycc###@-->
+                    <div class="articlereco">
+        <div class="recotitlebg">
+            <h2>Get Inspired with Some Popular Itineraries</h2>
+        </div>
+
+        <div class="table-responsive">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/cht-tb-02/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/09641c1546884bdeaaafa952_cut_600x550_77.jpg" class="img-responsive" alt="17-Day Relaxing Tour of Both Ancient &amp; Modern Flavor" width="600" height="550"/></a>
+                                <span class="articlenexttitle"><a href="/tour/cht-tb-02/">17-Day Relaxing Tour of Both Ancient &amp; Modern Flavor</a>
+                                   </span>
+                            </div>
+                                            </td>
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/winter-vacation/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/01/3180a04ba1a148dcab514166_cut_600x550_77.jpg" class="img-responsive" alt="China Winter Holiday Tours 2023/2024" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/winter-vacation/">China Winter Holiday Tours 2023/2024</a>
+                           </span>
+                            </div>
+                                            </td>
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/sanyatour/sy-1/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/02/7698775da02345d0aeac76fc_cut_600x550_251.jpg" class="img-responsive" alt="5-Day Sanya Tour with the Best Beach" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/sanyatour/sy-1/">5-Day Sanya Tour with the Best Beach</a>
+                                    </span>
+                            </div>
+                                            </td>
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/top-10-west-china-tours.htm" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2020/12/9969307aa6524d488c164a3e_cut_600x550_77.jpg" class="img-responsive" alt="10 Top Western China Tours" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/top-10-west-china-tours.htm">10 Top Western China Tours</a>
+                                   </span>
+                            </div>
+                        
+                    </td>
+
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/cht-yz-01/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://data.chinahighlights.com/image/tour-detail/china-tour/cht-yz-01-top-banner-mobile.jpg" class="img-responsive" alt="7-Day Shanghai Sights &amp; Yangtze Combo" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/cht-yz-01/">7-Day Shanghai Sights &amp; Yangtze Combo</a>
+                                </span>
+                            </div>
+                        
+                    </td>
+
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/cht-119/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2018/03/b43f100036b94284a4b2077a_cut_600x550_251.jpg" class="img-responsive" alt="9-Day Ancient China Heritage Trip" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/cht-119/">9-Day Ancient China Heritage Trip</a>
+                                    </span>
+                            </div>
+                        
+                    </td>
+
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/cht-kf-01/" rel="nofollow">
+                                    <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://data.chinahighlights.com/image/tour-detail/china-tour/cht-kf-01-top-banner-kungfu-mobile.jpg" class="img-responsive" alt="11-Day China Tour and Kungfu Experience" width="600" height="550"/>
+                                </a>
+                                <span class="articlenexttitle"><a href="/tour/cht-kf-01/">11-Day China Tour and Kungfu Experience</a>
+                                   </span>
+                            </div>
+                        
+                    </td>
+
+                    <td>
+                                                    <div class="articlenext">
+                                <a href="/tour/shanghai-kaifeng-zhengzhou-kunming-zhangjiajie-hangzhou.htm" rel="nofollow">
+                                <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2023/05/2172f1f8e4ac43f88ed1a571_cut_600x550_39.jpg" class="img-responsive" alt="15 Days Shanghai, Kaifeng, Zhengzhou, Kunming, Zhangjiajie and Hangzhou Tour" width="600" height="550"/></a>
+                                <span class="articlenexttitle"><a href="/tour/shanghai-kaifeng-zhengzhou-kunming-zhangjiajie-hangzhou.htm">15 Days Shanghai, Kaifeng, Zhengzhou, Kunming, Zhangjiajie and Hangzhou Tour</a>
+                                   </span>
+                            </div>
+                        
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="articlereco">
+        <div class="recotitlebg">
+            <h2>More Travel Ideas and Inspiration</h2>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <tbody>
+                <tr>
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/chinese-food/spring-rolls.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/c5658f4790324ef8a59ae824_cut_800x500_61.jpg" class="img-responsive" alt="Spring Rolls — a Popular Chinese New Year Food" width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/chinese-food/spring-rolls.htm"> Spring Rolls — a Popular Chinese New Year Food </a>
+                                </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/chinese-food/vegetable-dishes.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2017/10/389686bac7314df383d9219f_cut_800x500_61.jpg" class="img-responsive" alt="The Top 14 Vegetarian Dishes in China You Should Try        " width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/chinese-food/vegetable-dishes.htm"> The Top 14 Vegetarian Dishes in China You Should Try         </a>
+                                  </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/article-hotel-breakfasts.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/01/557ebdb8228049c8a8798ede_cut_800x500_9.jpg" class="img-responsive" alt="What to Expect from Hotel Breakfasts in China" width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/article-hotel-breakfasts.htm"> What to Expect from Hotel Breakfasts in China </a>
+                                   </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/chinese-food/tofu.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/08/f086a2b8dc664fc0bdfee656_cut_800x500_61.jpg" class="img-responsive" alt="Chinese Tofu Dishes" width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/chinese-food/tofu.htm"> Chinese Tofu Dishes </a>
+                                    </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/chinese-food/dining-time.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture//2019/05/4ce190602c294b7a9f4ee29d_cut_800x500_61.jpg" class="img-responsive" alt="China&#39;s Mealtimes - When, What, and How Chinese Eat         " width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/chinese-food/dining-time.htm"> China&#39;s Mealtimes - When, What, and How Chinese Eat          </a> </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/chinese-food/seating-arrangement.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2019/11/761970b451a740ed9c827804_cut_800x500_61.jpg" class="img-responsive" alt="Seating Arrangements for a Chinese Banquet" width="800" height="500"/></a>
+
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/chinese-food/seating-arrangement.htm"> Seating Arrangements for a Chinese Banquet </a>
+                                    </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/most-beautiful-places.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2021/10/50c6012378504ff3a025d295_cut_800x500_9.jpg" class="img-responsive" alt="The 15 Most Beautiful Places in China (#7 Will Impress You)" width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/most-beautiful-places.htm"> The 15 Most Beautiful Places in China (#7 Will Impress You) </a>
+                                    </span>
+                            </div>
+                        </td>
+                    
+                                            <td>
+                            <div class="articlenext">
+                                <a href="/travelguide/article-culture-shock-in-china.htm" rel="nofollow"> <img src="https://data.chinahighlights.com/grey.gif" loader="lazy" originalsrc="https://images.chinahighlights.com/allpicture/2020/01/8f7f8e13e3a5421ba0af3349_cut_800x500_264.jpg" class="img-responsive" alt="How to Deal with Culture Shock in China More Easily" width="800" height="500"/></a>
+                                <span class="articlenexttitle">
+                                        <a href="/travelguide/article-culture-shock-in-china.htm"> How to Deal with Culture Shock in China More Easily </a>
+                                    </span>
+                            </div>
+                        </td>
+                                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+            </section>
+        </div>
+        <div class="infotailor">
+
+            <span class="infotailorword">We are here to help you...<br/> start planning your tailor-made tour with 1-1
+                help from our travel advisors.
+                <span class="tourbutton"><a href="/tour/create-my-trip.htm" id="bottom_tailormade_pc">Create Your Trip
+                    </a></span>
+            </span>
+        </div>
+        <div class="footerbox newsletter_form">
+            <div class="list_content">
+              <h2 style="padding-top: 0; text-align: center;">Sign up to Our Newsletter</h2>
+              <p style="text-align: center;">Be the first to receive exciting updates, exclusive promotions, and valuable travel tips from our
+                  team of experts. </p>
+              <form action="https://www.chinahighlights.com/secureforms/newsletter_save" method="post" id="newsletter_form" name="newsletter_form" novalidate="">
+                <label id="name_area">
+                  <input type="text" name="name" id="newsletter_realname" class="contact_name" placeholder="* Your name"/>
+                  <div style="color: #a31022;display: none" class="requiredArea" id="newsletter_realname_errmsg">Please fill up your name.</div>
+                </label>
+                <label id="email_area">
+                  <input type="email" class="safyemail autoemail ui-autocomplete-input contact_email" name="email" id="newsletter_email" autocomplete="off" placeholder="* Email"/>
+                  <div style="color: #a31022;display: none" class="requiredArea" id="newsletter_email_errmsg">Please fill up your email address.</div>
+                  <div style="color: #a31022;display: none" class="requiredArea" id="newsletter_email_verify_errmsg">Please verify your email.</div>
+                </label>
+                <button id="submit_newsletter" type="button" class="sendInquiry">Inspire Me</button>
+              </form>
+            </div>
+          </div>
+        <div class="bottom_why_us">
+            <h2>The China Highlights Experience</h2>
+            <div class="table-responsive">
+                <table class="why_us_table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="bottom_why_us_content">
+                                    <img src="https://data.globalhighlights.com/image/aboutus/ah-bottom-why-us-tag-1.png" alt="1-to-1 Expert Planning" class="img-responsive"/>
+                                    <h3>1-to-1 Expert Planning</h3>
+                                    <p>Your tour will be tailor-made by your personal travel advisor — a destination
+                                        expert. Every reply will be within 24 hours.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bottom_why_us_content">
+                                    <img src="https://data.globalhighlights.com/image/aboutus/ah-bottom-why-us-tag-2.png" alt="Personal Journeys" class="img-responsive"/>
+                                    <h3>Personal Journeys</h3>
+                                    <p>Enjoy your personal local guide and ride. Explore destinations at your own pace.
+                                        Have unparalleled flexibility, which is impossible on a group tour.</p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="bottom_why_us_content">
+                                    <img src="https://data.globalhighlights.com/image/aboutus/ah-bottom-why-us-tag-3.png" alt="Authentic Experiences" class="img-responsive"/>
+                                    <h3>Authentic Experiences</h3>
+                                    <p>Discover the hidden gems. Experience local culture by practicing it. Try new and
+                                        exciting activities, and unveil the stories behind the sights and people. </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bottom_why_us_content">
+                                    <img src="https://data.chinahighlights.com/image/aboutus/feedback/ch-bottom-why-us-local-guide-tag.png" alt="Well-Selected Local Guides" class="img-responsive" width="100" height="100"/>
+                                    <h3>Well-Selected Local Guides</h3>
+                                    <p>Knowledgeable, enthusiastic, and attentive — your personal local guides will
+                                        share interesting stories, insider information, and even create unexpected
+                                        highlights!</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bottom_destinations">
+            <div class="list_content">
+            <h2 style="    margin-top: 0;    text-align: center;">Where Can We Take You Today?</h2>
+                <div class="listtour">
+
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/tour/top-china-tours/">Top 10 Tours</a></li>
+                            <li><a href="/tour/china-panda-tours/">Panda Tours</a></li>
+                            <li><a href="/tour/family-tours/">Family Tours</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/tour/chinese-food-tours/">Food Tours</a></li>
+                            <li><a href="/tour/china-nature-tours/">Nature Tours</a></li>
+                            <li><a href="/tour/photo-tours/">Photography Tours</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/tour/hassle-free-china-visas.htm">Visa-free Tours</a></li>
+                            <li><a href="/tour/china-hiking-tours/">Hiking Tours</a></li>
+                            <li><a href="/tour/china-biking-tours/">Biking Tours</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/tour/china-festival-tours/">Festival Tours</a></li>
+                            <li><a href="/tour/asia-tours/">Top Asia Tours</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="listtour">
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/beijing/tours.htm">Beijing Tours</a></li>
+                            <li><a href="/chengdu/tours.htm">Chengdu Tours</a></li>
+                            <li><a href="/chongqing/tours.htm">Chongqing Tours</a></li>
+                            <li><a href="/greatwall/tours/">Great Wall Tours</a></li>
+                            <li><a href="/guilin/tours.htm">Guilin Tours</a></li>
+                            <li><a href="/guizhou/tours.htm">Guizhou Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/harbin/tours.htm">Harbin Tours</a></li>
+                            <li><a href="/hangzhou/tours.htm">Hangzhou Tours</a></li>
+                            <li><a href="/huangshan/tours.htm">Huangshan Tours</a></li>
+                            <li><a href="/hong-kong/tours.htm">Hong Kong Tours</a></li>
+                            <li><a href="/inner-mongolia/tours/">Inner Mongolia Tours</a></li>
+                            <li><a href="/jiuzhaigou/tours.htm">Jiuzhaigou Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/pingyao/tours.htm">Pingyao Tours</a></li>
+                            <li><a href="/shanghai/tours.htm">Shanghai Tours</a></li>
+                            <li><a href="/suzhou/tours.htm">Suzhou Tours</a></li>
+                            <li><a href="/tour/silk-road-tours/">Silk Road Tours</a></li>
+                            <li><a href="/tibet/tours.htm">Tibet Tours</a></li>
+                            <li><a href="/taiwan/tours.htm">Taiwan Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="/tour/top-china-tours-from-hongkong.htm">Tours from Hong Kong</a></li>
+                            <li><a href="/tour/top-china-tours-from-shanghai.htm">Tours from Shanghai</a></li>
+                            <li><a href="/xinjiang/tours/">Xinjiang Tours</a></li>
+                            <li><a href="/xiamen/tours.htm">Xiamen Tours</a></li>
+                            <li><a href="/yunnan/tours.htm">Yunnan Tours</a></li>
+                            <li><a href="/tour/yangtze-river-tours/">Yangtze River Tours</a></li>
+                            <li><a href="/zhangjiajie/tours.htm">Zhangjiajie Tours</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="listtour">
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.asiahighlights.com/thailand/tours" target="_blank">Thailand Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/vietnam/tours" target="_blank">Vietnam Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/cambodia/tours" target="_blank">Cambodia Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/laos" target="_blank">Laos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.asiahighlights.com/india/tours" target="_blank">Japan Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/singapore" target="_blank">Singapore</a></li>
+                            <li><a href="https://www.asiahighlights.com/singapore/singapore-to-kuala-lumpur" target="_blank">Malaysia</a></li>
+                            <li><a href="https://www.asiahighlights.com/indonesia/bali/tours" target="_blank">Indonesia (Bali) Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.asiahighlights.com/india/tours" target="_blank">India Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/nepal" target="_blank">Nepal</a></li>
+                            <li><a href="https://www.asiahighlights.com/bhutan" target="_blank">Bhutan</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.asiahighlights.com/srilanka" target="_blank">Sri Lanka</a></li>
+                            <li><a href="https://www.asiahighlights.com/myanmar/tours" target="_blank">Myanmar Tours</a></li>
+                            <li><a href="https://www.asiahighlights.com/caucasus-central-asia/tours" target="_blank">Central Asia Tours</a></li>
+                        </ul>
+                    </div>            
+                </div>
+
+                <div class="listtour">
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.globalhighlights.com/egypt/tours" target="_blank">Egypt Tours</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.globalhighlights.com/morocco/tours" target="_blank">Morocco
+                                    Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.globalhighlights.com/turkey/tours" target="_blank">Turkey Tours</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="destination_links">
+                        <ul>
+                            <li><a href="https://www.globalhighlights.com/jordan/plan-a-trip" target="_blank">Jordan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footerbox">
+            <div class="list_content">
+                <div class="aboutusleft">
+                    <div class="bottomaboutus">
+                        <img src="https://data.chinahighlights.com/pic/logo/bottom-logo-b.png" width="170" height="121" style="float: left;    margin-right: 10px;    margin-bottom: 35px;    width: 170px;    height: 121px;"/>
+                        <div class="aboutusinfo">China Highlights tailor-makes China tours to help travelers discover
+                            China
+                            their way. We&#39;re a passionate team of one hundred avid travelers who love to share our
+                            knowledge
+                            of China with those looking for a more authentic travel experience, <a href="/aboutus/">more
+                                ...</a><br/>
+                            China Highlights International Travel Service Co., LTD <br/>
+                            Corporate Number: 914503003486045699
+                        </div>
+                    </div>
+                    <div class="bottomfollowus">
+                        <div class="bottompctitle">Follow Us</div>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Chinahighlights" rel="nofollow" title="Follow us on Facebook" class="fb" target="_blank">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                        <path id="facebook" fill="#ffffff" d="M17.252,11.106V8.65c0-0.922,0.611-1.138,1.041-1.138h2.643V3.459l-3.639-0.015	c-4.041,0-4.961,3.023-4.961,4.961v2.701H10v4.178h2.336v11.823h4.916V15.284h3.316l0.428-4.178H17.252z"></path>
+                                    </svg>Facebook</a></li>
+                            <li><a href="https://twitter.com/Chinahighlights" rel="nofollow" title="Share us on Twitter" class="tw" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                        </path>
+                                    </svg>
+                                    Twitter </a></li>
+                            <li><a href="https://www.instagram.com/chinahighlights/" rel="nofollow" title="Follow us on Instagram" class="linkin" target="_blank">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                        <path id="instagram" fill="#ffffff" d="M22.107,3.415H7.893c-2.469,0-4.479,2.007-4.479,4.477v4.73v9.486c0,2.469,2.01,4.479,4.479,4.479h14.215	c2.469,0,4.479-2.01,4.479-4.479v-9.486v-4.73C26.586,5.421,24.576,3.415,22.107,3.415 M23.393,6.086l0.512-0.004v0.511v3.416	l-3.916,0.014l-0.012-3.928L23.393,6.086z M11.693,12.622c0.742-1.028,1.945-1.7,3.307-1.7s2.564,0.672,3.307,1.7	c0.484,0.67,0.771,1.49,0.771,2.379c0,2.248-1.828,4.078-4.078,4.078c-2.248,0-4.078-1.83-4.078-4.078	C10.922,14.112,11.211,13.292,11.693,12.622 M24.328,22.107c0,1.225-0.994,2.219-2.221,2.219H7.893	c-1.225,0-2.219-0.994-2.219-2.219v-9.486h3.459C8.832,13.356,8.664,14.159,8.664,15c0,3.494,2.842,6.335,6.336,6.335	s6.336-2.842,6.336-6.335c0-0.842-0.17-1.645-0.467-2.379h3.459V22.107z"></path>
+                                    </svg> Instagram </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aboutusright">
+                    <div class="bottompctitle">Featured on</div>
+                    <img width="436" height="250" src="https://data.chinahighlights.com/pic/guide/info-template-feature-on.png" class="img-responsive bottomfeature"/>
+                </div>
+                <div class="clear"></div>
+                <ul class="withBorder" style="margin-top: 35px;">
+                    <li><a href="/travel-agents.htm">Travel Agents</a></li>
+                        <li><a href="/aboutus/" rel="nofollow">About us</a></li>
+                        <li><a href="/reviews.htm">Reviews</a></li>  
+                        <li><a href="/contactus/" rel="nofollow">Contact us</a></li>
+                        <li><a href="/aboutus/loyalty-program.htm" rel="nofollow">Loyalty &amp; Referral Program</a></li>
+                        <li><a href="/partner/" rel="nofollow">Partner</a></li>
+                        <li><a href="/privacy.htm" rel="nofollow">Privacy Policy</a></li>
+                        <li><a href="/aboutus/terms.htm">Terms</a></li>
+                    </ul>
+                <div class="bottomaboutuslinks">
+                    <div class="bottomlinksleft">
+                        
+                        <ul class="withBorder">
+                            <li><a href="https://www.asiahighlights.com/" target="_blank">Asia</a></li>
+                            <li><a href="https://www.globalhighlights.com/" target="_blank">Global</a></li>
+                            <li><a href="https://www.chinarundreisen.com/" target="_blank">Deutsch</a></li>
+                            <li><a href="https://www.voyageschine.com/" target="_blank">Français</a></li>
+                            <li><a href="https://www.viaje-a-china.com/" target="_blank">Español</a></li>
+                            <li><a href="https://www.viaggio-in-cina.it/" target="_blank">Italiano</a></li>
+                            <li><a href="https://www.chinahighlights.ru/" target="_blank">Русский</a></li>
+                            <li><a href="https://www.arachina.com/" target="_blank">日本語</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottommembers">
+                        <div class="memberIcons">
+                            <img width="68" height="67" src="https://data.chinahighlights.com/image/aboutus/member/member-icons-2022-pata.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomlogo">
+        <div class="list_content">
+            <img src="https://data.chinahighlights.com/pic/guide/info-template-bottom-logo.jpg" width="114" height="71" class="img-responsive bottomlogopc"/>
+            <span class="bottomcopyright">© 1998-2023 China Highlights — Discovery Your Way! </span>
+        </div>
+    </div>
+    <div class="web_cookie" style="display: none;" id="gotIdArea">
+        <p>China Highlights uses cookies to give you the best possible service. If you continue browsing, you agree to
+            the use of cookies. More details can be found in our <a href="/privacy.htm">privacy policy</a>.</p>
+        <div class="cookie_close" id="gotItBtn" style="float: right;    padding: 5px 10px;    cursor: pointer;    background: #fff;    font-weight: 600;    font-size: 16px;">X</div>
+    </div>
+    <script>
+        var GOT_IT_KEY = '__china_highlights_you_agree_to_use_of_cookies__';
+        if (window.localStorage && localStorage.getItem(GOT_IT_KEY)) {
+            console.info('If you continue browsing, you agree to the use of cookies.');
+        } else {
+            document.getElementById('gotIdArea').style.display = '';
+            if (window.localStorage) {
+                localStorage.setItem(GOT_IT_KEY, '1');
+            }
+
+            var gotItBtn = document.getElementById('gotItBtn');
+            gotItBtn.addEventListener('click', function (evt) {
+                document.getElementById('gotIdArea').style.display = 'none';
+            });
+
+            setTimeout(function () {
+                document.getElementById('gotIdArea').style.display = 'none';
+            }, 10000);
+        }
+    </script>
+
+<!--newsletter表单 JS-->
+<script src="https://www.recaptcha.net/recaptcha/enterprise.js?render=6Lf828MhAAAAANNetijCXKwW5ARyhcJ-b1Hhslja"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  var submitbutton = document.getElementById("submit_newsletter");
+  var newsletterForm = document.getElementById("newsletter_form");
+
+  submitbutton.addEventListener('click', function(event) {
+    var validateResult = validateNewsletterForm();
+    if (validateResult) {
+      if (typeof(grecaptcha) === "undefined") {
+        console.warn('grecaptcha is disabled.');
+        newsletterForm.submit();
+      } else {
+        grecaptcha.enterprise.ready(async () => {
+          const token = await grecaptcha.enterprise.execute('6Lf828MhAAAAANNetijCXKwW5ARyhcJ-b1Hhslja', {action: 'ADD_TO_CART'});
+          var el = document.createElement("input");
+          el.type = "hidden";
+          el.name = "__grecaptcha_token__";
+          el.value = token;
+          newsletterForm.appendChild(el);
+          newsletterForm.submit();
+          submitbutton.innerText = "Submitted successfully";
+        });
+      }
+    }
+  });
+});
+
+function validateNewsletterForm() {
+  var result = true;
+  var realnameVal = document.getElementById("newsletter_realname").value;
+  var emailVal = document.getElementById("newsletter_email").value;
+
+  var realnameErrEl = document.getElementById("newsletter_realname_errmsg");
+  var emailErrEl = document.getElementById("newsletter_email_errmsg");
+  var emailVerifyErrEl = document.getElementById("newsletter_email_verify_errmsg");
+
+  realnameErrEl.style.display = 'none';
+  emailErrEl.style.display = 'none';
+  emailVerifyErrEl.style.display = 'none';
+
+  if (realnameVal === '') {
+    realnameErrEl.style.display = '';
+    result = false;
+  }
+  if (emailVal === '') {
+    emailErrEl.style.display = '';
+    result = false;
+  } else {
+    var emailPattern = /^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/;
+    if (!emailPattern.test(emailVal)) {
+      emailVerifyErrEl.style.display = '';
+      result = false;
+    }
+  }
+  return result;
+}
+</script>
+
+
+    <!--@PRODUCT-JS@-->
+    <!--@ADDON-JS@-->
+    <script>eval(function (p, a, c, k, e, d) {
+            e = function (c) {
+                return (c < a ? "" : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+            };
+            if (!''.replace(/^/, String)) {
+                while (c--) d[e(c)] = k[c] || e(c);
+                k = [function (e) {
+                    return d[e]
+                }];
+                e = function () {
+                    return '\\w+'
+                };
+                c = 1;
+            }
+            ;
+            while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+            return p;
+        }('8.R=10;(4(){3 h=b 26();4 11(X){8.R=X&&X.1I===\'1b\'?h.1V==1:10;1c()}h.1T=11;h.1Z=11;h.S=\'1M:1R/1x;1F,1Q/1P=\'})();5(!c.g){c.g=(4(){3 1u=y.M.1S;3 P=4(l){6 I l==="4"||1u.Q(l)==="[19 1L]"};3 1j=4(D){3 f=1O(D);5(1N(f)){6 0}5(f===0||!1Y(f)){6 f}6(f>0?1:-1)*o.1X(o.20(f))};3 1y=o.1U(2,1W)-1;3 1a=4(D){3 9=1j(D);6 o.1G(o.1H(9,0),1y)};6 4 g(J){3 C=E;3 U=y(J);5(J==p){F b H("c.g 1K 1J 1E-1D 19 - V p 1k B")}3 n=j.m>1?j[1]:2o B;3 T;5(I n!=="B"){5(!P(n)){F b H("c.g: 2q 2j, 2i 2k 2l 2m 2n a 4")}5(j.m>2){T=j[2]}}3 9=1a(U.m);3 A=P(C)?y(b C(9)):b c(9);3 k=0;3 d;1l(k<9){d=U[k];5(n){A[k]=I T==="B"?n(d,k):n.Q(T,d,k)}z{A[k]=d}k+=1}A.m=9;6 A}}())}5(!c.M.v){c.M.v=4(u){3 T,k;5(E==p){F b H("E 1i p 1k V 2p")}3 O=y(E);3 9=O.m>>>0;5(I u!=="4"){F b H(u+" 1i V a 4")}5(j.m>1){T=j[1]}k=0;1l(k<9){3 d;5(k 13 O){d=O[k];u.Q(T,d,k,O)}k++}}}4 1c(2h){3 14=4(i){i.W("1b",4(){i.r.q=1});5(8.R){i.1z("S",i.1B("1A").25(\'.28\',\'.1x\'))}z{i.1z("S",i.1B("1A"))}};3 1p=c.g(e.1q("h[1C=27]"));1p.v(4(7,Y){7.r.q=0;7.r.1w="q 0.18 1e-13-1m";14(7)});3 w=1o();w();4 12(l,1s,1v){3 N=p,L=b 1r();6 4(){3 K=b 1r();22(N);5(K-L>=1v){l();L=K}z{N=21(l,1s)}}}4 1h(1n){3 16=1n.24();6{15:16.15+8.23-e.t.2e,1t:16.1t+8.2d-e.t.2g}}4 1o(){3 G=c.g(e.1q("h[1C=2f]"));G.v(4(7,Y){7.r.q=0;7.r.1w="q 0.18 1e-13-1m"});6 4(){3 1g=8.2a;3 x=(e.t&&e.t.x)||(e.1d&&e.1d.x);G=G.29(4(7,Y){3 1f=1h(7).15;3 Z=1f<1g+x;5(Z){14(7)}6!Z})}}5(8.W){8.W("2c",12(w,s,s),10)}z{5(8.17){8.17("2b",12(w,s,s))}}};', 62, 151, '|||var|function|if|return|element|window|len||new|Array|kValue|document|number|from|img|target|arguments||fn|length|mapFn|Math|null|opacity|style|500|documentElement|callback|forEach|lazyloader|scrollTop|Object|else||undefined||value|this|throw|lazyImageList|TypeError|typeof|arrayLike|curTime|startTime|prototype|timeout||isCallable|call|isSupportWebp|src||items|not|addEventListener|event|index|hasVisible|false|getResult|throttle|in|loadImageByUrl|top|box|attachEvent|5s|object|toLength|load|createImageLoader|body|ease|offsetTop|seeHeight|getOffset|is|toInteger|or|while|out|el|createLazyloader|imageList|querySelectorAll|Date|delay|left|toStr|atleast|transition|webp|maxSafeInteger|setAttribute|originalsrc|getAttribute|loader|like|array|base64|min|max|type|an|requires|Function|data|isNaN|Number|vuUAAA|UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA|image|toString|onerror|pow|width|53|floor|isFinite|onload|abs|setTimeout|clearTimeout|pageYOffset|getBoundingClientRect|replace|Image|ready|jpg|filter|innerHeight|onscroll|scroll|pageXOffset|clientTop|lazy|clientLeft|settings|the|provided|second|argument|must|be|void|defined|when'.split('|'), 0, {}))
+
+        function loadScriptByAsync(src) {
+            var asyncScript = document.createElement("script");
+            asyncScript.async = true;
+            asyncScript.crossorigin = "anonymous";
+            asyncScript.src = src;
+            firstScript = document.getElementsByTagName("script")[0];
+            firstScript.parentNode.insertBefore(asyncScript, firstScript);
+        }</script>
+    <!--@IN-ARTICLE-GOOGLE@-->
+    <script>document.addEventListener("DOMContentLoaded",()=>{setTimeout(function(){loadScriptByAsync("https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52170b0a4a301edc")},5e3)});</script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "China Highlights",
+        "url": "https://www.chinahighlights.com/",
+        "logo": "https://data.chinahighlights.com/pic/logo/china-highlights-top-navigation-logo.png",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+86 773 2831999",
+                "contactType": "customer support",
+                "availableLanguage": "English"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/Chinahighlights",
+            "https://twitter.com/Chinahighlights",
+            "https://www.instagram.com/chinahighlights/"
+        ]
+    }
+</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.chinahighlights.com/",
+        "name": "China Highlights",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Building 6, Chuangyi Business Park, 70 Qilidian Road",
+            "addressLocality": "Guilin",
+            "addressRegion": "Guangxi",
+            "postalCode": "541004",
+            "addressCountry": "CHINA"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ruby Zhao"
+            }
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 25.241375,
+            "longitude": 110.33852
+        },
+        "url": "https://www.chinahighlights.com/",
+        "telephone": "+86 773 2831999",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Monday",
+                "opens": "9:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Tuesday",
+                "opens": "9:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Wednesday",
+                "opens": "9:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Thursday",
+                "opens": "9:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "9:00",
+                "closes": "17:00"
+            }
+        ]
+    }
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://secure.chinahighlights.com/",
+  "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://secure.chinahighlights.com/result.asp?001281624266240652297:cl1fy1cxepi&cof=FORID:9&q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",  
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.chinahighlights.com/"
+    }
+            ,{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Chinese Culture",
+            "item": "https://www.chinahighlights.com/travelguide/culture/"
+        }
+            ,{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chinese Food",
+            "item": "https://www.chinahighlights.com/travelguide/chinese-food/"
+        }
+          
+    ,{
+      "@type": "ListItem",
+      "position": 4,
+      "name": "The 15 Most Popular Chinese Dishes, Tasty Chinese Food"
+    }
+        ]
+  }
+  </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm"
+  },
+  "headline": "Best Traditional Chinese Dishes: 15 Must-Try China Foods",
+  "image": [
+    "https://images.chinahighlights.com/allpicture/2021/12/71879439c9ef4d0da835efb6_cut_750x400_39.jpg"
+    ],
+  "datePublished": "2021-07-21 13:53:52.670",
+  "dateModified": "2023-07-12T09:16:59",
+  "author": {
+    "@type": "Person",
+    "name": "Mike Ho"
+  },
+    "publisher": {
+    "@type": "Organization",
+    "name": "China Highlights",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://data.chinahighlights.com/pic/logo/china-highlights-top-navigation-logo.png"
+    }
+  }
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+				var __inScopeForCCPA = false;
+		function __uspapi(command, version, callback) {
+			var response = null;
+			var successs = false;
+			if (command === "getUSPData" && version === 1) {
+				var uspString = "1"; // Version
+				if (__inScopeForCCPA) {
+					uspString += "N"; // Has Explicit Notice for Opt Out been provided (ex footer or minor consent modal)
+					var result;
+					var consentCookie = (result = new RegExp('(?:^|; )ezoccpaconsent=([^;]*)').exec(document.cookie)) ? (result[1]) : null;
+					if (consentCookie === "nonconsent") {
+						uspString += "Y";
+					}
+					else {
+						uspString += "N";
+					}
+					uspString += "N" // Is pub a signatory to the IAB Limited Service Provider Agreement (http://www.iabprivacy.com/)
+				}
+				else {
+					uspString += "---";
+				}
+				response = {
+					uspString: uspString,
+					version: 1
+				};
+				success = true;
+			}
+			return callback(response, success);
+		};
+		function __receiveUspapiMessage(event) {
+			if (event.data.hasOwnProperty('__uspapiCall')) {
+				__uspapi('getUSPData', 1, function(uspData, success) {
+					event.source.postMessage({
+						__uspapiReturn: {
+							returnValue: uspData,
+							success: success,
+							callId: event.data.__uspapiCall.callId
+						}
+					},
+					event.origin);
+				});
+			}
+			return null;
+		};
+		window.addEventListener("message", __receiveUspapiMessage, false);
+</script>
+<script>function __ez_fad_ezpbinit(){var s = document.createElement( 'script' );
+	s.setAttribute( 'src', '//go.ezodn.com/hb/dall.js?cb=195-0-58' );
+	s.onerror = function () {window.ezDallErr = true};
+	document.body.appendChild( s );}__ez.queue.addFile('/detroitchicago/kenai.js', '/detroitchicago/kenai.js?gcb=0&cb=6', false, [], true, false, true, false);var ezjsps=function(obj){return JSON.parse(JSON.stringify(obj));};var epbjs=epbjs||{};epbjs.que=epbjs.que||[];epbjs.bidderTimeout=2000;epbjs.useAdj=true;epbjs.SS={"adagio":11328,"adpone":11312,"adyoulike":11314,"bcmssp":11294,"onemobile":11293,"rubicon":10063,"sharethrough":11309,"smartadserver":11335,"triplelift":11296,"unruly":10097};epbjs.bidders=['adagio','adpone','adyoulike','bcmssp','onemobile','rubicon','sharethrough','smartadserver','triplelift','unruly'];epbjs.que.push(function(){});epbjs.bidderSettings={};epbjs.gadj=1.000000;var __enableAnalytics=false;epbjs.testFeatures=[''];
+var __s2sbidders=[];
+var __s2sinstreambidders=[];
+var __allBidders=['triplelift','adagio','bcmssp','onemobile','rubicon','smartadserver','sharethrough','adyoulike','adpone','unruly'];
+__ez.queue.addFile('/detroitchicago/portland.js', '/detroitchicago/portland.js?gcb=0&cb=12', true, [], true, false, true, false);__ez.queue.addFunc("epbjsRequestAdUnits", "epbjsRequestAdUnits", [[]], false, ['/detroitchicago/portland.js'], true, true, true, true);var ez__id5pd = 'MTA9NzIuMTM5LjIwNy4xMDcmMTI9TW96aWxsYSUyRjUuMCslMjhXaW5kb3dzK05UKzEwLjAlM0IrV2luNjQlM0IreDY0JTI5K0FwcGxlV2ViS2l0JTJGNTM3LjM2KyUyOEtIVE1MJTJDK2xpa2UrR2Vja28lMjkrQ2hyb21lJTJGMTE0LjAuMC4wK1NhZmFyaSUyRjUzNy4zNg==';var ez__uIdHash = '58ef17f98f2b7d08e7afc7af2e363ed66190427d52124d04728b8c43b460c240';var ez__sspDomain = 'www.chinahighlights.com';</script>
+<script async data-ezscrex="false">__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_load(0,0);__ez.fads.__ez_fad_scrollmon();});</script>
+<script src="https://api.fouanalytics.com/api/init-1632lqsy2s4fklqsvsii.js" data-cfasync="false" async></script><noscript><img src="https://api.fouanalytics.com/api/noscript-1632lqsy2s4fklqsvsii.gif"></noscript>
+
+		<script>setTimeout(function(){var cookieTest=getCookie("ezvignetteviewed");if(cookieTest==""){window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];googletag.cmd.push(function(){if(ezslot_interstitial==null){return;}
+googletag.display(ezslot_interstitial);googletag.pubads().refresh([ezslot_interstitial]);});}},1000);function getCookie(cname){var name=cname+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1);}
+if(c.indexOf(name)==0){return c.substring(name.length,c.length);}}
+return "";}</script>
+<script type="text/javascript" data-cfasync="false"></script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type='text/javascript' style='display:none;' async>
+</script>
+</body></html>
